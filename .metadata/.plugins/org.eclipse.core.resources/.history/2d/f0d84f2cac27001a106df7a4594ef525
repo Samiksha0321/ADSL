@@ -8,11 +8,11 @@
 /*
  * Given binary tree with n nodes and perform following operations on it.
 	a)Assign this tree to another [operator=]
-	b)Erase all nodes in a binary tree    											(done)
-	c)Create a mirror image of the tree												(done)
+	b)Erase all nodes in a binary tree
+	c)Create a mirror image of the tree
 	d)Check two binary trees are equal or not
-	e)Inorder, Preorder, Postorder traversal of tree(recursive and non-recursive)	(done)
-	f)Print internal and leaf nodes													(done)
+	e)Inorder, Preorder, Postorder traversal of tree(recursive and non-recursive)
+	f)Print internal and leaf nodes
  */
 #include <iostream>
 #include<bits/stdc++.h>
@@ -82,11 +82,11 @@ public:
 	}
 
 
-	void inorderRecursive(Node *root){
-		if(root != NULL){
-			inorderRecursive(root->left);
-			cout<<root->data<<" ";
-			inorderRecursive(root->right);
+	void inorderRecursive(Node *n){
+		if(n != NULL){
+			inorderRecursive(n->left);
+			cout<<n->data<<" ";
+			inorderRecursive(n->right);
 		}
 	}
 	void preorderRecursive(Node *n){
@@ -113,24 +113,12 @@ public:
 
 	}
 
-	void eraseNodes(Node *n){
+	void postorderRecursive(Node *n){
 		if(n != NULL){
 			inorderRecursive(n->left);
 			inorderRecursive(n->right);
 			cout<<n->data<<" is deleted\n";
 		}
-	}
-
-	void mirrorTree(Node *root){
-		if(root != NULL){
-			mirrorTree(root->left);
-			mirrorTree(root->right);
-			swap(root->left, root->right);
-		}
-	}
-
-	void print_Leaf_and_Internal(Node *root){
-
 	}
 };
 
@@ -152,10 +140,7 @@ a:
 			"4. Preorder Recursive"
 			"5. Preorder Non-Recursive"
 			"6. Postorder Recursive"
-			"7. Postorder Non-Recursive"
-			"8. Erase all nodes"
-			"9. Mirror of the tree"
-			"10. Print internal and leaf nodes";
+			"7. Postorder Non-Recursive";
 	cin>>option;
 	switch(option){
 	case 1: A.CreateTree();
@@ -178,13 +163,6 @@ a:
 	case 7: A.postorderNONRecursive(A.root);
 			cout<<endl;
 			break;
-	case 8: A.eraseNodes(A.root);
-			break;
-	case 9: A.mirrorTree(A.root);
-			break;
-	case 10:A.print_Leaf_and_Internal(A.root);
-			break;
-	default:cout<<"\tEnter valid option."
 	}
 goto a;
 	return 0;

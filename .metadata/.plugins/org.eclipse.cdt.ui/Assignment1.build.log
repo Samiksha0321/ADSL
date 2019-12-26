@@ -1,4 +1,4 @@
-12:04:07 **** Incremental Build of configuration Debug for project Assignment1 ****
+12:54:56 **** Incremental Build of configuration Debug for project Assignment1 ****
 make all 
 Building file: ../src/Assignment1.cpp
 Invoking: GCC C++ Compiler
@@ -6,13 +6,11 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/
 ../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
   Node *root = new Node;
                    ^
-Finished building: ../src/Assignment1.cpp
- 
-Building target: Assignment1
-Invoking: GCC C++ Linker
-g++  -o "Assignment1"  ./src/Assignment1.o   
-Finished building target: Assignment1
- 
+../src/Assignment1.cpp: In function ‘int main()’:
+../src/Assignment1.cpp:188:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+make: *** [src/Assignment1.o] Error 1
 
-12:04:07 Build Finished (took 911ms)
+12:54:57 Build Finished (took 463ms)
 

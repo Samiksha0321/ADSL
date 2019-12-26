@@ -8,11 +8,11 @@
 /*
  * Given binary tree with n nodes and perform following operations on it.
 	a)Assign this tree to another [operator=]
-	b)Erase all nodes in a binary tree    											(done)
-	c)Create a mirror image of the tree												(done)
+	b)Erase all nodes in a binary tree
+	c)Create a mirror image of the tree
 	d)Check two binary trees are equal or not
-	e)Inorder, Preorder, Postorder traversal of tree(recursive and non-recursive)	(done)
-	f)Print internal and leaf nodes													(done)
+	e)Inorder, Preorder, Postorder traversal of tree(recursive and non-recursive)
+	f)Print internal and leaf nodes
  */
 #include <iostream>
 #include<bits/stdc++.h>
@@ -128,10 +128,6 @@ public:
 			swap(root->left, root->right);
 		}
 	}
-
-	void print_Leaf_and_Internal(Node *root){
-
-	}
 };
 
 int main() {
@@ -153,9 +149,7 @@ a:
 			"5. Preorder Non-Recursive"
 			"6. Postorder Recursive"
 			"7. Postorder Non-Recursive"
-			"8. Erase all nodes"
-			"9. Mirror of the tree"
-			"10. Print internal and leaf nodes";
+			"8. Erase all nodes";
 	cin>>option;
 	switch(option){
 	case 1: A.CreateTree();
@@ -180,11 +174,6 @@ a:
 			break;
 	case 8: A.eraseNodes(A.root);
 			break;
-	case 9: A.mirrorTree(A.root);
-			break;
-	case 10:A.print_Leaf_and_Internal(A.root);
-			break;
-	default:cout<<"\tEnter valid option."
 	}
 goto a;
 	return 0;

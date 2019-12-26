@@ -1835,3 +1835,110 @@ Invoking: GCC C++ Linker
 g++  -o "Assignment1"  ./src/Assignment1.o   
 Finished building target: Assignment1
  
+12:22:23 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+../src/Assignment1.cpp: In function ‘int main()’:
+../src/Assignment1.cpp:167:23: error: no matching function for call to ‘Tree::eraseNodes()’
+  case 8: A.eraseNodes();
+                       ^
+../src/Assignment1.cpp:167:23: note: candidate is:
+../src/Assignment1.cpp:116:7: note: void Tree::eraseNodes(Node*)
+  void eraseNodes(Node *n){
+       ^
+../src/Assignment1.cpp:116:7: note:   candidate expects 1 argument, 0 provided
+make: *** [src/Assignment1.o] Error 1
+12:22:38 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+../src/Assignment1.cpp:116:18: error: expected ‘;’ at end of member declaration
+  void eraseNodes()){
+                  ^
+../src/Assignment1.cpp:116:19: error: expected unqualified-id before ‘)’ token
+  void eraseNodes()){
+                   ^
+../src/Assignment1.cpp:172:1: error: expected ‘}’ at end of input
+ }
+ ^
+../src/Assignment1.cpp:114:2: error: expected unqualified-id at end of input
+  }
+  ^
+make: *** [src/Assignment1.o] Error 1
+12:23:04 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+../src/Assignment1.cpp: In member function ‘void Tree::eraseNodes()’:
+../src/Assignment1.cpp:117:6: error: ‘n’ was not declared in this scope
+   if(n != NULL){
+      ^
+make: *** [src/Assignment1.o] Error 1
+12:23:36 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+Finished building: ../src/Assignment1.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o   
+Finished building target: Assignment1
+ 
+12:39:20 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+../src/Assignment1.cpp:133:1: error: expected unqualified-id before ‘}’ token
+ };
+ ^
+make: *** [src/Assignment1.o] Error 1
+12:49:04 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+Finished building: ../src/Assignment1.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o   
+Finished building target: Assignment1
+ 
+12:54:56 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+../src/Assignment1.cpp: In function ‘int main()’:
+../src/Assignment1.cpp:188:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+make: *** [src/Assignment1.o] Error 1

@@ -129,7 +129,7 @@ public:
 		}
 	}
 
-	void print_Leaf_and_Internal(Node *root){
+	void printLeafInternal(Node *root){
 
 	}
 };
@@ -154,8 +154,7 @@ a:
 			"6. Postorder Recursive"
 			"7. Postorder Non-Recursive"
 			"8. Erase all nodes"
-			"9. Mirror of the tree"
-			"10. Print internal and leaf nodes";
+			"9. Mirror of the tree";
 	cin>>option;
 	switch(option){
 	case 1: A.CreateTree();
@@ -182,9 +181,6 @@ a:
 			break;
 	case 9: A.mirrorTree(A.root);
 			break;
-	case 10:A.print_Leaf_and_Internal(A.root);
-			break;
-	default:cout<<"\tEnter valid option."
 	}
 goto a;
 	return 0;
