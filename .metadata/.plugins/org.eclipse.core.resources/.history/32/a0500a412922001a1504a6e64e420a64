@@ -1,0 +1,81 @@
+//============================================================================
+// Name        : Assignment1.cpp
+// Author      : 21153
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+/*
+ * Given binary tree with n nodes and perform following operations on it.
+	a)Assign this tree to another [operator=]
+	b)Erase all nodes in a binary tree
+	c)Create a mirror image of the tree
+	d)Check two binary trees are equal or not
+	e)Inorder, Preorder, Postorder traversal of tree(recursive and non-recursive)
+	f)Print internal and leaf nodes
+ */
+#include <iostream>
+using namespace std;
+
+class Node{
+public:
+	int data;
+	Node *right;
+	Node *left;
+	Node(){
+		data = 0;
+		right = NULL;
+		left = NULL;
+	}
+};
+
+class Tree{
+public:
+
+	void CreateTree(){
+		Node *root = new Node;
+		char c;
+		do{
+			Node *p = new Node;
+			cout<<"Enter the value: ";
+			cin>>p->data;
+			if(root == NULL)
+				root = p;
+			else{
+				Node *q = new Node;
+				q = root;
+				int flag=0;
+				char side;
+
+				do{
+					cout<<"Add this to r or l: ";
+					cin>>side;
+					if(side == 'l'){
+						if(q->left == NULL){
+							q->left = p;
+							flag = 1;
+						}
+						else
+							q = q->left;
+					}
+					if(side == 'r'){
+						if(q->right == NULL){
+							q->right = p;
+							flag = 1;
+						}
+						else
+							q = q->right;
+					}
+				}while(flag == 0);
+			}
+			cout<<"Add new node(y/n): ";
+			cin>>c;
+		}while(c == "y");
+	}
+};
+
+int main() {
+	Tree A;
+	A.CreateTree();
+	return 0;
+}

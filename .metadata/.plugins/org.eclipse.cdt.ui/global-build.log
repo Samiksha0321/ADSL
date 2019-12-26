@@ -1,0 +1,1729 @@
+12:00:23 **** Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp: In member function ‘void Tree::CreateTree()’:
+../src/Assignment1.cpp:73:15: warning: comparison with string literal results in unspecified behaviour [-Waddress]
+   }while(c == "y");
+               ^
+../src/Assignment1.cpp:73:15: error: ISO C++ forbids comparison between pointer and integer [-fpermissive]
+make: *** [src/Assignment1.o] Error 1
+12:00:25 **** Build of configuration Debug for project LinkedList ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:32:2: error: expected unqualified-id before ‘new’
+  new *current=NULL;
+  ^
+../src/LinkedList.cpp: In member function ‘void LinkedList::createNode()’:
+../src/LinkedList.cpp:38:6: error: ‘current’ was not declared in this scope
+   if(current -> NULL){
+      ^
+In file included from /usr/include/time.h:37:0,
+                 from /usr/include/pthread.h:24,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr-default.h:35,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr.h:148,
+                 from /usr/include/c++/4.8.3/ext/atomicity.h:35,
+                 from /usr/include/c++/4.8.3/bits/ios_base.h:39,
+                 from /usr/include/c++/4.8.3/ios:42,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/LinkedList.cpp:16:
+../src/LinkedList.cpp:38:17: error: expected unqualified-id before ‘__null’
+   if(current -> NULL){
+                 ^
+../src/LinkedList.cpp:38:17: error: expected ‘)’ before ‘__null’
+../src/LinkedList.cpp:40:15: error: expected unqualified-id before ‘&’ token
+    current -> &root;
+               ^
+../src/LinkedList.cpp:43:21: error: expected unqualified-id before ‘&’ token
+    *current.next -> &p;
+                     ^
+../src/LinkedList.cpp:44:15: error: expected unqualified-id before ‘&’ token
+    current -> &p;
+               ^
+../src/LinkedList.cpp: In member function ‘void LinkedList::deleteNode()’:
+../src/LinkedList.cpp:49:7: error: expected type-specifier before ‘*’ token
+   new *p;
+       ^
+../src/LinkedList.cpp:49:8: error: ‘p’ was not declared in this scope
+   new *p;
+        ^
+../src/LinkedList.cpp:53:10: error: expected primary-expression before ‘!=’ token
+   while( != NULL){
+          ^
+../src/LinkedList.cpp:55:3: error: expected ‘(’ before ‘}’ token
+   }
+   ^
+../src/LinkedList.cpp: In function ‘int main()’:
+../src/LinkedList.cpp:63:5: error: no match for ‘operator>>’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘Node’)
+  cin>> root;
+     ^
+../src/LinkedList.cpp:63:5: note: candidates are:
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:120:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(__istream_type& (*__pf)(__istream_type&))
+       ^
+/usr/include/c++/4.8.3/istream:120:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&) {aka std::basic_istream<char>& (*)(std::basic_istream<char>&)}’
+/usr/include/c++/4.8.3/istream:124:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator>>(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.8.3/istream:124:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.8.3/istream:131:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(ios_base& (*__pf)(ios_base&))
+       ^
+/usr/include/c++/4.8.3/istream:131:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.8.3/istream:168:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(bool& __n)
+       ^
+/usr/include/c++/4.8.3/istream:168:7: note:   no known conversion for argument 1 from ‘Node’ to ‘bool&’
+/usr/include/c++/4.8.3/istream:172:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(short& __n);
+       ^
+/usr/include/c++/4.8.3/istream:172:7: note:   no known conversion for argument 1 from ‘Node’ to ‘short int&’
+/usr/include/c++/4.8.3/istream:175:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned short& __n)
+       ^
+/usr/include/c++/4.8.3/istream:175:7: note:   no known conversion for argument 1 from ‘Node’ to ‘short unsigned int&’
+/usr/include/c++/4.8.3/istream:179:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(int& __n);
+       ^
+/usr/include/c++/4.8.3/istream:179:7: note:   no known conversion for argument 1 from ‘Node’ to ‘int&’
+/usr/include/c++/4.8.3/istream:182:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned int& __n)
+       ^
+/usr/include/c++/4.8.3/istream:182:7: note:   no known conversion for argument 1 from ‘Node’ to ‘unsigned int&’
+/usr/include/c++/4.8.3/istream:186:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:186:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long int&’
+/usr/include/c++/4.8.3/istream:190:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:190:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long unsigned int&’
+/usr/include/c++/4.8.3/istream:195:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:195:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long long int&’
+/usr/include/c++/4.8.3/istream:199:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:199:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long long unsigned int&’
+/usr/include/c++/4.8.3/istream:214:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(float& __f)
+       ^
+/usr/include/c++/4.8.3/istream:214:7: note:   no known conversion for argument 1 from ‘Node’ to ‘float&’
+/usr/include/c++/4.8.3/istream:218:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(double& __f)
+       ^
+/usr/include/c++/4.8.3/istream:218:7: note:   no known conversion for argument 1 from ‘Node’ to ‘double&’
+/usr/include/c++/4.8.3/istream:222:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long double& __f)
+       ^
+/usr/include/c++/4.8.3/istream:222:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long double&’
+/usr/include/c++/4.8.3/istream:235:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(void*& __p)
+       ^
+/usr/include/c++/4.8.3/istream:235:7: note:   no known conversion for argument 1 from ‘Node’ to ‘void*&’
+/usr/include/c++/4.8.3/istream:259:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+       operator>>(__streambuf_type* __sb);
+       ^
+/usr/include/c++/4.8.3/istream:259:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/4.8.3/string:53:0,
+                 from /usr/include/c++/4.8.3/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.3/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.3/ios:42,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8.3/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   ‘Node’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/istream:879:0,
+                 from /usr/include/c++/4.8.3/iostream:40,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8.3/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   mismatched types ‘_CharT2*’ and ‘Node’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/istream:879:0,
+                 from /usr/include/c++/4.8.3/iostream:40,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8.3/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘Node’)
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8.3/istream:727:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘unsigned char&’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8.3/istream:732:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘signed char&’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8.3/istream:774:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘unsigned char*’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8.3/istream:779:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘signed char*’
+  cin>> root;
+        ^
+../src/LinkedList.cpp:72:21: error: ‘createNode’ was not declared in this scope
+  case 1: createNode();
+                     ^
+../src/LinkedList.cpp:74:21: error: ‘deleteNode’ was not declared in this scope
+  case 2: deleteNode();
+                     ^
+make: *** [src/LinkedList.o] Error 1
+12:01:06 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp: In member function ‘void Tree::CreateTree()’:
+../src/Assignment1.cpp:73:15: warning: comparison with string literal results in unspecified behaviour [-Waddress]
+   }while(c == "y")
+               ^
+../src/Assignment1.cpp:73:15: error: ISO C++ forbids comparison between pointer and integer [-fpermissive]
+../src/Assignment1.cpp:74:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+make: *** [src/Assignment1.o] Error 1
+12:01:07 **** Incremental Build of configuration Debug for project LinkedList ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:32:2: error: expected unqualified-id before ‘new’
+  new *current=NULL;
+  ^
+../src/LinkedList.cpp: In member function ‘void LinkedList::createNode()’:
+../src/LinkedList.cpp:38:6: error: ‘current’ was not declared in this scope
+   if(current -> NULL){
+      ^
+In file included from /usr/include/time.h:37:0,
+                 from /usr/include/pthread.h:24,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr-default.h:35,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr.h:148,
+                 from /usr/include/c++/4.8.3/ext/atomicity.h:35,
+                 from /usr/include/c++/4.8.3/bits/ios_base.h:39,
+                 from /usr/include/c++/4.8.3/ios:42,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/LinkedList.cpp:16:
+../src/LinkedList.cpp:38:17: error: expected unqualified-id before ‘__null’
+   if(current -> NULL){
+                 ^
+../src/LinkedList.cpp:38:17: error: expected ‘)’ before ‘__null’
+../src/LinkedList.cpp:40:15: error: expected unqualified-id before ‘&’ token
+    current -> &root;
+               ^
+../src/LinkedList.cpp:43:21: error: expected unqualified-id before ‘&’ token
+    *current.next -> &p;
+                     ^
+../src/LinkedList.cpp:44:15: error: expected unqualified-id before ‘&’ token
+    current -> &p;
+               ^
+../src/LinkedList.cpp: In member function ‘void LinkedList::deleteNode()’:
+../src/LinkedList.cpp:49:7: error: expected type-specifier before ‘*’ token
+   new *p;
+       ^
+../src/LinkedList.cpp:49:8: error: ‘p’ was not declared in this scope
+   new *p;
+        ^
+../src/LinkedList.cpp:53:10: error: expected primary-expression before ‘!=’ token
+   while( != NULL){
+          ^
+../src/LinkedList.cpp:55:3: error: expected ‘(’ before ‘}’ token
+   }
+   ^
+../src/LinkedList.cpp: In function ‘int main()’:
+../src/LinkedList.cpp:63:5: error: no match for ‘operator>>’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘Node’)
+  cin>> root;
+     ^
+../src/LinkedList.cpp:63:5: note: candidates are:
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:120:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(__istream_type& (*__pf)(__istream_type&))
+       ^
+/usr/include/c++/4.8.3/istream:120:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&) {aka std::basic_istream<char>& (*)(std::basic_istream<char>&)}’
+/usr/include/c++/4.8.3/istream:124:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator>>(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.8.3/istream:124:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.8.3/istream:131:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(ios_base& (*__pf)(ios_base&))
+       ^
+/usr/include/c++/4.8.3/istream:131:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.8.3/istream:168:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(bool& __n)
+       ^
+/usr/include/c++/4.8.3/istream:168:7: note:   no known conversion for argument 1 from ‘Node’ to ‘bool&’
+/usr/include/c++/4.8.3/istream:172:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(short& __n);
+       ^
+/usr/include/c++/4.8.3/istream:172:7: note:   no known conversion for argument 1 from ‘Node’ to ‘short int&’
+/usr/include/c++/4.8.3/istream:175:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned short& __n)
+       ^
+/usr/include/c++/4.8.3/istream:175:7: note:   no known conversion for argument 1 from ‘Node’ to ‘short unsigned int&’
+/usr/include/c++/4.8.3/istream:179:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(int& __n);
+       ^
+/usr/include/c++/4.8.3/istream:179:7: note:   no known conversion for argument 1 from ‘Node’ to ‘int&’
+/usr/include/c++/4.8.3/istream:182:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned int& __n)
+       ^
+/usr/include/c++/4.8.3/istream:182:7: note:   no known conversion for argument 1 from ‘Node’ to ‘unsigned int&’
+/usr/include/c++/4.8.3/istream:186:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:186:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long int&’
+/usr/include/c++/4.8.3/istream:190:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:190:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long unsigned int&’
+/usr/include/c++/4.8.3/istream:195:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:195:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long long int&’
+/usr/include/c++/4.8.3/istream:199:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:199:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long long unsigned int&’
+/usr/include/c++/4.8.3/istream:214:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(float& __f)
+       ^
+/usr/include/c++/4.8.3/istream:214:7: note:   no known conversion for argument 1 from ‘Node’ to ‘float&’
+/usr/include/c++/4.8.3/istream:218:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(double& __f)
+       ^
+/usr/include/c++/4.8.3/istream:218:7: note:   no known conversion for argument 1 from ‘Node’ to ‘double&’
+/usr/include/c++/4.8.3/istream:222:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long double& __f)
+       ^
+/usr/include/c++/4.8.3/istream:222:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long double&’
+/usr/include/c++/4.8.3/istream:235:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(void*& __p)
+       ^
+/usr/include/c++/4.8.3/istream:235:7: note:   no known conversion for argument 1 from ‘Node’ to ‘void*&’
+/usr/include/c++/4.8.3/istream:259:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+       operator>>(__streambuf_type* __sb);
+       ^
+/usr/include/c++/4.8.3/istream:259:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/4.8.3/string:53:0,
+                 from /usr/include/c++/4.8.3/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.3/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.3/ios:42,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8.3/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   ‘Node’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/istream:879:0,
+                 from /usr/include/c++/4.8.3/iostream:40,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8.3/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   mismatched types ‘_CharT2*’ and ‘Node’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/istream:879:0,
+                 from /usr/include/c++/4.8.3/iostream:40,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8.3/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘Node’)
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8.3/istream:727:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘unsigned char&’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8.3/istream:732:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘signed char&’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8.3/istream:774:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘unsigned char*’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8.3/istream:779:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘signed char*’
+  cin>> root;
+        ^
+../src/LinkedList.cpp:72:21: error: ‘createNode’ was not declared in this scope
+  case 1: createNode();
+                     ^
+../src/LinkedList.cpp:74:21: error: ‘deleteNode’ was not declared in this scope
+  case 2: deleteNode();
+                     ^
+make: *** [src/LinkedList.o] Error 1
+12:01:22 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp: In member function ‘void Tree::CreateTree()’:
+../src/Assignment1.cpp:73:15: warning: comparison with string literal results in unspecified behaviour [-Waddress]
+   }while(c == "y");
+               ^
+../src/Assignment1.cpp:73:15: error: ISO C++ forbids comparison between pointer and integer [-fpermissive]
+make: *** [src/Assignment1.o] Error 1
+12:01:22 **** Incremental Build of configuration Debug for project LinkedList ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:32:2: error: expected unqualified-id before ‘new’
+  new *current=NULL;
+  ^
+../src/LinkedList.cpp: In member function ‘void LinkedList::createNode()’:
+../src/LinkedList.cpp:38:6: error: ‘current’ was not declared in this scope
+   if(current -> NULL){
+      ^
+In file included from /usr/include/time.h:37:0,
+                 from /usr/include/pthread.h:24,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr-default.h:35,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr.h:148,
+                 from /usr/include/c++/4.8.3/ext/atomicity.h:35,
+                 from /usr/include/c++/4.8.3/bits/ios_base.h:39,
+                 from /usr/include/c++/4.8.3/ios:42,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/LinkedList.cpp:16:
+../src/LinkedList.cpp:38:17: error: expected unqualified-id before ‘__null’
+   if(current -> NULL){
+                 ^
+../src/LinkedList.cpp:38:17: error: expected ‘)’ before ‘__null’
+../src/LinkedList.cpp:40:15: error: expected unqualified-id before ‘&’ token
+    current -> &root;
+               ^
+../src/LinkedList.cpp:43:21: error: expected unqualified-id before ‘&’ token
+    *current.next -> &p;
+                     ^
+../src/LinkedList.cpp:44:15: error: expected unqualified-id before ‘&’ token
+    current -> &p;
+               ^
+../src/LinkedList.cpp: In member function ‘void LinkedList::deleteNode()’:
+../src/LinkedList.cpp:49:7: error: expected type-specifier before ‘*’ token
+   new *p;
+       ^
+../src/LinkedList.cpp:49:8: error: ‘p’ was not declared in this scope
+   new *p;
+        ^
+../src/LinkedList.cpp:53:10: error: expected primary-expression before ‘!=’ token
+   while( != NULL){
+          ^
+../src/LinkedList.cpp:55:3: error: expected ‘(’ before ‘}’ token
+   }
+   ^
+../src/LinkedList.cpp: In function ‘int main()’:
+../src/LinkedList.cpp:63:5: error: no match for ‘operator>>’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘Node’)
+  cin>> root;
+     ^
+../src/LinkedList.cpp:63:5: note: candidates are:
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:120:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(__istream_type& (*__pf)(__istream_type&))
+       ^
+/usr/include/c++/4.8.3/istream:120:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&) {aka std::basic_istream<char>& (*)(std::basic_istream<char>&)}’
+/usr/include/c++/4.8.3/istream:124:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator>>(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.8.3/istream:124:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.8.3/istream:131:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(ios_base& (*__pf)(ios_base&))
+       ^
+/usr/include/c++/4.8.3/istream:131:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.8.3/istream:168:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(bool& __n)
+       ^
+/usr/include/c++/4.8.3/istream:168:7: note:   no known conversion for argument 1 from ‘Node’ to ‘bool&’
+/usr/include/c++/4.8.3/istream:172:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(short& __n);
+       ^
+/usr/include/c++/4.8.3/istream:172:7: note:   no known conversion for argument 1 from ‘Node’ to ‘short int&’
+/usr/include/c++/4.8.3/istream:175:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned short& __n)
+       ^
+/usr/include/c++/4.8.3/istream:175:7: note:   no known conversion for argument 1 from ‘Node’ to ‘short unsigned int&’
+/usr/include/c++/4.8.3/istream:179:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(int& __n);
+       ^
+/usr/include/c++/4.8.3/istream:179:7: note:   no known conversion for argument 1 from ‘Node’ to ‘int&’
+/usr/include/c++/4.8.3/istream:182:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned int& __n)
+       ^
+/usr/include/c++/4.8.3/istream:182:7: note:   no known conversion for argument 1 from ‘Node’ to ‘unsigned int&’
+/usr/include/c++/4.8.3/istream:186:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:186:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long int&’
+/usr/include/c++/4.8.3/istream:190:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:190:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long unsigned int&’
+/usr/include/c++/4.8.3/istream:195:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:195:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long long int&’
+/usr/include/c++/4.8.3/istream:199:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:199:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long long unsigned int&’
+/usr/include/c++/4.8.3/istream:214:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(float& __f)
+       ^
+/usr/include/c++/4.8.3/istream:214:7: note:   no known conversion for argument 1 from ‘Node’ to ‘float&’
+/usr/include/c++/4.8.3/istream:218:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(double& __f)
+       ^
+/usr/include/c++/4.8.3/istream:218:7: note:   no known conversion for argument 1 from ‘Node’ to ‘double&’
+/usr/include/c++/4.8.3/istream:222:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long double& __f)
+       ^
+/usr/include/c++/4.8.3/istream:222:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long double&’
+/usr/include/c++/4.8.3/istream:235:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(void*& __p)
+       ^
+/usr/include/c++/4.8.3/istream:235:7: note:   no known conversion for argument 1 from ‘Node’ to ‘void*&’
+/usr/include/c++/4.8.3/istream:259:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+       operator>>(__streambuf_type* __sb);
+       ^
+/usr/include/c++/4.8.3/istream:259:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/4.8.3/string:53:0,
+                 from /usr/include/c++/4.8.3/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.3/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.3/ios:42,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8.3/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   ‘Node’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/istream:879:0,
+                 from /usr/include/c++/4.8.3/iostream:40,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8.3/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   mismatched types ‘_CharT2*’ and ‘Node’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/istream:879:0,
+                 from /usr/include/c++/4.8.3/iostream:40,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8.3/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘Node’)
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8.3/istream:727:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘unsigned char&’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8.3/istream:732:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘signed char&’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8.3/istream:774:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘unsigned char*’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8.3/istream:779:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘signed char*’
+  cin>> root;
+        ^
+../src/LinkedList.cpp:72:21: error: ‘createNode’ was not declared in this scope
+  case 1: createNode();
+                     ^
+../src/LinkedList.cpp:74:21: error: ‘deleteNode’ was not declared in this scope
+  case 2: deleteNode();
+                     ^
+make: *** [src/LinkedList.o] Error 1
+12:01:57 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+Finished building: ../src/Assignment1.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o   
+Finished building target: Assignment1
+ 
+12:01:58 **** Incremental Build of configuration Debug for project LinkedList ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:32:2: error: expected unqualified-id before ‘new’
+  new *current=NULL;
+  ^
+../src/LinkedList.cpp: In member function ‘void LinkedList::createNode()’:
+../src/LinkedList.cpp:38:6: error: ‘current’ was not declared in this scope
+   if(current -> NULL){
+      ^
+In file included from /usr/include/time.h:37:0,
+                 from /usr/include/pthread.h:24,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr-default.h:35,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr.h:148,
+                 from /usr/include/c++/4.8.3/ext/atomicity.h:35,
+                 from /usr/include/c++/4.8.3/bits/ios_base.h:39,
+                 from /usr/include/c++/4.8.3/ios:42,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/LinkedList.cpp:16:
+../src/LinkedList.cpp:38:17: error: expected unqualified-id before ‘__null’
+   if(current -> NULL){
+                 ^
+../src/LinkedList.cpp:38:17: error: expected ‘)’ before ‘__null’
+../src/LinkedList.cpp:40:15: error: expected unqualified-id before ‘&’ token
+    current -> &root;
+               ^
+../src/LinkedList.cpp:43:21: error: expected unqualified-id before ‘&’ token
+    *current.next -> &p;
+                     ^
+../src/LinkedList.cpp:44:15: error: expected unqualified-id before ‘&’ token
+    current -> &p;
+               ^
+../src/LinkedList.cpp: In member function ‘void LinkedList::deleteNode()’:
+../src/LinkedList.cpp:49:7: error: expected type-specifier before ‘*’ token
+   new *p;
+       ^
+../src/LinkedList.cpp:49:8: error: ‘p’ was not declared in this scope
+   new *p;
+        ^
+../src/LinkedList.cpp:53:10: error: expected primary-expression before ‘!=’ token
+   while( != NULL){
+          ^
+../src/LinkedList.cpp:55:3: error: expected ‘(’ before ‘}’ token
+   }
+   ^
+../src/LinkedList.cpp: In function ‘int main()’:
+../src/LinkedList.cpp:63:5: error: no match for ‘operator>>’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘Node’)
+  cin>> root;
+     ^
+../src/LinkedList.cpp:63:5: note: candidates are:
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:120:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(__istream_type& (*__pf)(__istream_type&))
+       ^
+/usr/include/c++/4.8.3/istream:120:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&) {aka std::basic_istream<char>& (*)(std::basic_istream<char>&)}’
+/usr/include/c++/4.8.3/istream:124:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator>>(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.8.3/istream:124:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.8.3/istream:131:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(ios_base& (*__pf)(ios_base&))
+       ^
+/usr/include/c++/4.8.3/istream:131:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.8.3/istream:168:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(bool& __n)
+       ^
+/usr/include/c++/4.8.3/istream:168:7: note:   no known conversion for argument 1 from ‘Node’ to ‘bool&’
+/usr/include/c++/4.8.3/istream:172:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(short& __n);
+       ^
+/usr/include/c++/4.8.3/istream:172:7: note:   no known conversion for argument 1 from ‘Node’ to ‘short int&’
+/usr/include/c++/4.8.3/istream:175:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned short& __n)
+       ^
+/usr/include/c++/4.8.3/istream:175:7: note:   no known conversion for argument 1 from ‘Node’ to ‘short unsigned int&’
+/usr/include/c++/4.8.3/istream:179:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(int& __n);
+       ^
+/usr/include/c++/4.8.3/istream:179:7: note:   no known conversion for argument 1 from ‘Node’ to ‘int&’
+/usr/include/c++/4.8.3/istream:182:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned int& __n)
+       ^
+/usr/include/c++/4.8.3/istream:182:7: note:   no known conversion for argument 1 from ‘Node’ to ‘unsigned int&’
+/usr/include/c++/4.8.3/istream:186:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:186:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long int&’
+/usr/include/c++/4.8.3/istream:190:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:190:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long unsigned int&’
+/usr/include/c++/4.8.3/istream:195:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:195:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long long int&’
+/usr/include/c++/4.8.3/istream:199:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:199:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long long unsigned int&’
+/usr/include/c++/4.8.3/istream:214:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(float& __f)
+       ^
+/usr/include/c++/4.8.3/istream:214:7: note:   no known conversion for argument 1 from ‘Node’ to ‘float&’
+/usr/include/c++/4.8.3/istream:218:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(double& __f)
+       ^
+/usr/include/c++/4.8.3/istream:218:7: note:   no known conversion for argument 1 from ‘Node’ to ‘double&’
+/usr/include/c++/4.8.3/istream:222:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long double& __f)
+       ^
+/usr/include/c++/4.8.3/istream:222:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long double&’
+/usr/include/c++/4.8.3/istream:235:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(void*& __p)
+       ^
+/usr/include/c++/4.8.3/istream:235:7: note:   no known conversion for argument 1 from ‘Node’ to ‘void*&’
+/usr/include/c++/4.8.3/istream:259:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+       operator>>(__streambuf_type* __sb);
+       ^
+/usr/include/c++/4.8.3/istream:259:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/4.8.3/string:53:0,
+                 from /usr/include/c++/4.8.3/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.3/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.3/ios:42,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8.3/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   ‘Node’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/istream:879:0,
+                 from /usr/include/c++/4.8.3/iostream:40,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8.3/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   mismatched types ‘_CharT2*’ and ‘Node’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/istream:879:0,
+                 from /usr/include/c++/4.8.3/iostream:40,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8.3/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘Node’)
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8.3/istream:727:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘unsigned char&’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8.3/istream:732:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘signed char&’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8.3/istream:774:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘unsigned char*’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8.3/istream:779:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘signed char*’
+  cin>> root;
+        ^
+../src/LinkedList.cpp:72:21: error: ‘createNode’ was not declared in this scope
+  case 1: createNode();
+                     ^
+../src/LinkedList.cpp:74:21: error: ‘deleteNode’ was not declared in this scope
+  case 2: deleteNode();
+                     ^
+make: *** [src/LinkedList.o] Error 1
+12:02:11 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:02:11 **** Incremental Build of configuration Debug for project LinkedList ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:32:2: error: expected unqualified-id before ‘new’
+  new *current=NULL;
+  ^
+../src/LinkedList.cpp: In member function ‘void LinkedList::createNode()’:
+../src/LinkedList.cpp:38:6: error: ‘current’ was not declared in this scope
+   if(current -> NULL){
+      ^
+In file included from /usr/include/time.h:37:0,
+                 from /usr/include/pthread.h:24,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr-default.h:35,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr.h:148,
+                 from /usr/include/c++/4.8.3/ext/atomicity.h:35,
+                 from /usr/include/c++/4.8.3/bits/ios_base.h:39,
+                 from /usr/include/c++/4.8.3/ios:42,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/LinkedList.cpp:16:
+../src/LinkedList.cpp:38:17: error: expected unqualified-id before ‘__null’
+   if(current -> NULL){
+                 ^
+../src/LinkedList.cpp:38:17: error: expected ‘)’ before ‘__null’
+../src/LinkedList.cpp:40:15: error: expected unqualified-id before ‘&’ token
+    current -> &root;
+               ^
+../src/LinkedList.cpp:43:21: error: expected unqualified-id before ‘&’ token
+    *current.next -> &p;
+                     ^
+../src/LinkedList.cpp:44:15: error: expected unqualified-id before ‘&’ token
+    current -> &p;
+               ^
+../src/LinkedList.cpp: In member function ‘void LinkedList::deleteNode()’:
+../src/LinkedList.cpp:49:7: error: expected type-specifier before ‘*’ token
+   new *p;
+       ^
+../src/LinkedList.cpp:49:8: error: ‘p’ was not declared in this scope
+   new *p;
+        ^
+../src/LinkedList.cpp:53:10: error: expected primary-expression before ‘!=’ token
+   while( != NULL){
+          ^
+../src/LinkedList.cpp:55:3: error: expected ‘(’ before ‘}’ token
+   }
+   ^
+../src/LinkedList.cpp: In function ‘int main()’:
+../src/LinkedList.cpp:63:5: error: no match for ‘operator>>’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘Node’)
+  cin>> root;
+     ^
+../src/LinkedList.cpp:63:5: note: candidates are:
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:120:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(__istream_type& (*__pf)(__istream_type&))
+       ^
+/usr/include/c++/4.8.3/istream:120:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&) {aka std::basic_istream<char>& (*)(std::basic_istream<char>&)}’
+/usr/include/c++/4.8.3/istream:124:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator>>(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.8.3/istream:124:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.8.3/istream:131:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(ios_base& (*__pf)(ios_base&))
+       ^
+/usr/include/c++/4.8.3/istream:131:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.8.3/istream:168:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(bool& __n)
+       ^
+/usr/include/c++/4.8.3/istream:168:7: note:   no known conversion for argument 1 from ‘Node’ to ‘bool&’
+/usr/include/c++/4.8.3/istream:172:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(short& __n);
+       ^
+/usr/include/c++/4.8.3/istream:172:7: note:   no known conversion for argument 1 from ‘Node’ to ‘short int&’
+/usr/include/c++/4.8.3/istream:175:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned short& __n)
+       ^
+/usr/include/c++/4.8.3/istream:175:7: note:   no known conversion for argument 1 from ‘Node’ to ‘short unsigned int&’
+/usr/include/c++/4.8.3/istream:179:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(int& __n);
+       ^
+/usr/include/c++/4.8.3/istream:179:7: note:   no known conversion for argument 1 from ‘Node’ to ‘int&’
+/usr/include/c++/4.8.3/istream:182:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned int& __n)
+       ^
+/usr/include/c++/4.8.3/istream:182:7: note:   no known conversion for argument 1 from ‘Node’ to ‘unsigned int&’
+/usr/include/c++/4.8.3/istream:186:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:186:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long int&’
+/usr/include/c++/4.8.3/istream:190:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:190:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long unsigned int&’
+/usr/include/c++/4.8.3/istream:195:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:195:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long long int&’
+/usr/include/c++/4.8.3/istream:199:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:199:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long long unsigned int&’
+/usr/include/c++/4.8.3/istream:214:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(float& __f)
+       ^
+/usr/include/c++/4.8.3/istream:214:7: note:   no known conversion for argument 1 from ‘Node’ to ‘float&’
+/usr/include/c++/4.8.3/istream:218:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(double& __f)
+       ^
+/usr/include/c++/4.8.3/istream:218:7: note:   no known conversion for argument 1 from ‘Node’ to ‘double&’
+/usr/include/c++/4.8.3/istream:222:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long double& __f)
+       ^
+/usr/include/c++/4.8.3/istream:222:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long double&’
+/usr/include/c++/4.8.3/istream:235:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(void*& __p)
+       ^
+/usr/include/c++/4.8.3/istream:235:7: note:   no known conversion for argument 1 from ‘Node’ to ‘void*&’
+/usr/include/c++/4.8.3/istream:259:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+       operator>>(__streambuf_type* __sb);
+       ^
+/usr/include/c++/4.8.3/istream:259:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/4.8.3/string:53:0,
+                 from /usr/include/c++/4.8.3/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.3/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.3/ios:42,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8.3/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   ‘Node’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/istream:879:0,
+                 from /usr/include/c++/4.8.3/iostream:40,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8.3/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   mismatched types ‘_CharT2*’ and ‘Node’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/istream:879:0,
+                 from /usr/include/c++/4.8.3/iostream:40,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8.3/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘Node’)
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8.3/istream:727:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘unsigned char&’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8.3/istream:732:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘signed char&’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8.3/istream:774:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘unsigned char*’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8.3/istream:779:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘signed char*’
+  cin>> root;
+        ^
+../src/LinkedList.cpp:72:21: error: ‘createNode’ was not declared in this scope
+  case 1: createNode();
+                     ^
+../src/LinkedList.cpp:74:21: error: ‘deleteNode’ was not declared in this scope
+  case 2: deleteNode();
+                     ^
+make: *** [src/LinkedList.o] Error 1
+12:02:19 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:02:50 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:02:50 **** Incremental Build of configuration Debug for project LinkedList ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:32:2: error: expected unqualified-id before ‘new’
+  new *current=NULL;
+  ^
+../src/LinkedList.cpp: In member function ‘void LinkedList::createNode()’:
+../src/LinkedList.cpp:38:6: error: ‘current’ was not declared in this scope
+   if(current -> NULL){
+      ^
+In file included from /usr/include/time.h:37:0,
+                 from /usr/include/pthread.h:24,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr-default.h:35,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr.h:148,
+                 from /usr/include/c++/4.8.3/ext/atomicity.h:35,
+                 from /usr/include/c++/4.8.3/bits/ios_base.h:39,
+                 from /usr/include/c++/4.8.3/ios:42,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/LinkedList.cpp:16:
+../src/LinkedList.cpp:38:17: error: expected unqualified-id before ‘__null’
+   if(current -> NULL){
+                 ^
+../src/LinkedList.cpp:38:17: error: expected ‘)’ before ‘__null’
+../src/LinkedList.cpp:40:15: error: expected unqualified-id before ‘&’ token
+    current -> &root;
+               ^
+../src/LinkedList.cpp:43:21: error: expected unqualified-id before ‘&’ token
+    *current.next -> &p;
+                     ^
+../src/LinkedList.cpp:44:15: error: expected unqualified-id before ‘&’ token
+    current -> &p;
+               ^
+../src/LinkedList.cpp: In member function ‘void LinkedList::deleteNode()’:
+../src/LinkedList.cpp:49:7: error: expected type-specifier before ‘*’ token
+   new *p;
+       ^
+../src/LinkedList.cpp:49:8: error: ‘p’ was not declared in this scope
+   new *p;
+        ^
+../src/LinkedList.cpp:53:10: error: expected primary-expression before ‘!=’ token
+   while( != NULL){
+          ^
+../src/LinkedList.cpp:55:3: error: expected ‘(’ before ‘}’ token
+   }
+   ^
+../src/LinkedList.cpp: In function ‘int main()’:
+../src/LinkedList.cpp:63:5: error: no match for ‘operator>>’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘Node’)
+  cin>> root;
+     ^
+../src/LinkedList.cpp:63:5: note: candidates are:
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:120:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(__istream_type& (*__pf)(__istream_type&))
+       ^
+/usr/include/c++/4.8.3/istream:120:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&) {aka std::basic_istream<char>& (*)(std::basic_istream<char>&)}’
+/usr/include/c++/4.8.3/istream:124:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator>>(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.8.3/istream:124:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.8.3/istream:131:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(ios_base& (*__pf)(ios_base&))
+       ^
+/usr/include/c++/4.8.3/istream:131:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.8.3/istream:168:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(bool& __n)
+       ^
+/usr/include/c++/4.8.3/istream:168:7: note:   no known conversion for argument 1 from ‘Node’ to ‘bool&’
+/usr/include/c++/4.8.3/istream:172:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(short& __n);
+       ^
+/usr/include/c++/4.8.3/istream:172:7: note:   no known conversion for argument 1 from ‘Node’ to ‘short int&’
+/usr/include/c++/4.8.3/istream:175:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned short& __n)
+       ^
+/usr/include/c++/4.8.3/istream:175:7: note:   no known conversion for argument 1 from ‘Node’ to ‘short unsigned int&’
+/usr/include/c++/4.8.3/istream:179:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(int& __n);
+       ^
+/usr/include/c++/4.8.3/istream:179:7: note:   no known conversion for argument 1 from ‘Node’ to ‘int&’
+/usr/include/c++/4.8.3/istream:182:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned int& __n)
+       ^
+/usr/include/c++/4.8.3/istream:182:7: note:   no known conversion for argument 1 from ‘Node’ to ‘unsigned int&’
+/usr/include/c++/4.8.3/istream:186:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:186:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long int&’
+/usr/include/c++/4.8.3/istream:190:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:190:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long unsigned int&’
+/usr/include/c++/4.8.3/istream:195:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:195:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long long int&’
+/usr/include/c++/4.8.3/istream:199:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:199:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long long unsigned int&’
+/usr/include/c++/4.8.3/istream:214:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(float& __f)
+       ^
+/usr/include/c++/4.8.3/istream:214:7: note:   no known conversion for argument 1 from ‘Node’ to ‘float&’
+/usr/include/c++/4.8.3/istream:218:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(double& __f)
+       ^
+/usr/include/c++/4.8.3/istream:218:7: note:   no known conversion for argument 1 from ‘Node’ to ‘double&’
+/usr/include/c++/4.8.3/istream:222:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long double& __f)
+       ^
+/usr/include/c++/4.8.3/istream:222:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long double&’
+/usr/include/c++/4.8.3/istream:235:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(void*& __p)
+       ^
+/usr/include/c++/4.8.3/istream:235:7: note:   no known conversion for argument 1 from ‘Node’ to ‘void*&’
+/usr/include/c++/4.8.3/istream:259:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+       operator>>(__streambuf_type* __sb);
+       ^
+/usr/include/c++/4.8.3/istream:259:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/4.8.3/string:53:0,
+                 from /usr/include/c++/4.8.3/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.3/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.3/ios:42,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8.3/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   ‘Node’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/istream:879:0,
+                 from /usr/include/c++/4.8.3/iostream:40,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8.3/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   mismatched types ‘_CharT2*’ and ‘Node’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/istream:879:0,
+                 from /usr/include/c++/4.8.3/iostream:40,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8.3/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘Node’)
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8.3/istream:727:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘unsigned char&’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8.3/istream:732:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘signed char&’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8.3/istream:774:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘unsigned char*’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8.3/istream:779:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘signed char*’
+  cin>> root;
+        ^
+../src/LinkedList.cpp:72:21: error: ‘createNode’ was not declared in this scope
+  case 1: createNode();
+                     ^
+../src/LinkedList.cpp:74:21: error: ‘deleteNode’ was not declared in this scope
+  case 2: deleteNode();
+                     ^
+make: *** [src/LinkedList.o] Error 1
+12:02:59 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:02:59 **** Incremental Build of configuration Debug for project LinkedList ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:32:2: error: expected unqualified-id before ‘new’
+  new *current=NULL;
+  ^
+../src/LinkedList.cpp: In member function ‘void LinkedList::createNode()’:
+../src/LinkedList.cpp:38:6: error: ‘current’ was not declared in this scope
+   if(current -> NULL){
+      ^
+In file included from /usr/include/time.h:37:0,
+                 from /usr/include/pthread.h:24,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr-default.h:35,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/gthr.h:148,
+                 from /usr/include/c++/4.8.3/ext/atomicity.h:35,
+                 from /usr/include/c++/4.8.3/bits/ios_base.h:39,
+                 from /usr/include/c++/4.8.3/ios:42,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/LinkedList.cpp:16:
+../src/LinkedList.cpp:38:17: error: expected unqualified-id before ‘__null’
+   if(current -> NULL){
+                 ^
+../src/LinkedList.cpp:38:17: error: expected ‘)’ before ‘__null’
+../src/LinkedList.cpp:40:15: error: expected unqualified-id before ‘&’ token
+    current -> &root;
+               ^
+../src/LinkedList.cpp:43:21: error: expected unqualified-id before ‘&’ token
+    *current.next -> &p;
+                     ^
+../src/LinkedList.cpp:44:15: error: expected unqualified-id before ‘&’ token
+    current -> &p;
+               ^
+../src/LinkedList.cpp: In member function ‘void LinkedList::deleteNode()’:
+../src/LinkedList.cpp:49:7: error: expected type-specifier before ‘*’ token
+   new *p;
+       ^
+../src/LinkedList.cpp:49:8: error: ‘p’ was not declared in this scope
+   new *p;
+        ^
+../src/LinkedList.cpp:53:10: error: expected primary-expression before ‘!=’ token
+   while( != NULL){
+          ^
+../src/LinkedList.cpp:55:3: error: expected ‘(’ before ‘}’ token
+   }
+   ^
+../src/LinkedList.cpp: In function ‘int main()’:
+../src/LinkedList.cpp:63:5: error: no match for ‘operator>>’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘Node’)
+  cin>> root;
+     ^
+../src/LinkedList.cpp:63:5: note: candidates are:
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:120:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(__istream_type& (*__pf)(__istream_type&))
+       ^
+/usr/include/c++/4.8.3/istream:120:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&) {aka std::basic_istream<char>& (*)(std::basic_istream<char>&)}’
+/usr/include/c++/4.8.3/istream:124:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator>>(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.8.3/istream:124:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.8.3/istream:131:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(ios_base& (*__pf)(ios_base&))
+       ^
+/usr/include/c++/4.8.3/istream:131:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.8.3/istream:168:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(bool& __n)
+       ^
+/usr/include/c++/4.8.3/istream:168:7: note:   no known conversion for argument 1 from ‘Node’ to ‘bool&’
+/usr/include/c++/4.8.3/istream:172:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(short& __n);
+       ^
+/usr/include/c++/4.8.3/istream:172:7: note:   no known conversion for argument 1 from ‘Node’ to ‘short int&’
+/usr/include/c++/4.8.3/istream:175:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned short& __n)
+       ^
+/usr/include/c++/4.8.3/istream:175:7: note:   no known conversion for argument 1 from ‘Node’ to ‘short unsigned int&’
+/usr/include/c++/4.8.3/istream:179:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(int& __n);
+       ^
+/usr/include/c++/4.8.3/istream:179:7: note:   no known conversion for argument 1 from ‘Node’ to ‘int&’
+/usr/include/c++/4.8.3/istream:182:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned int& __n)
+       ^
+/usr/include/c++/4.8.3/istream:182:7: note:   no known conversion for argument 1 from ‘Node’ to ‘unsigned int&’
+/usr/include/c++/4.8.3/istream:186:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:186:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long int&’
+/usr/include/c++/4.8.3/istream:190:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:190:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long unsigned int&’
+/usr/include/c++/4.8.3/istream:195:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:195:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long long int&’
+/usr/include/c++/4.8.3/istream:199:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:199:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long long unsigned int&’
+/usr/include/c++/4.8.3/istream:214:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(float& __f)
+       ^
+/usr/include/c++/4.8.3/istream:214:7: note:   no known conversion for argument 1 from ‘Node’ to ‘float&’
+/usr/include/c++/4.8.3/istream:218:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(double& __f)
+       ^
+/usr/include/c++/4.8.3/istream:218:7: note:   no known conversion for argument 1 from ‘Node’ to ‘double&’
+/usr/include/c++/4.8.3/istream:222:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long double& __f)
+       ^
+/usr/include/c++/4.8.3/istream:222:7: note:   no known conversion for argument 1 from ‘Node’ to ‘long double&’
+/usr/include/c++/4.8.3/istream:235:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(void*& __p)
+       ^
+/usr/include/c++/4.8.3/istream:235:7: note:   no known conversion for argument 1 from ‘Node’ to ‘void*&’
+/usr/include/c++/4.8.3/istream:259:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+       operator>>(__streambuf_type* __sb);
+       ^
+/usr/include/c++/4.8.3/istream:259:7: note:   no known conversion for argument 1 from ‘Node’ to ‘std::basic_istream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/4.8.3/string:53:0,
+                 from /usr/include/c++/4.8.3/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.3/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.3/ios:42,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8.3/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   ‘Node’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/istream:879:0,
+                 from /usr/include/c++/4.8.3/iostream:40,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8.3/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   mismatched types ‘_CharT2*’ and ‘Node’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/istream:879:0,
+                 from /usr/include/c++/4.8.3/iostream:40,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8.3/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘Node’)
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8.3/istream:727:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘unsigned char&’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8.3/istream:732:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘signed char&’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8.3/istream:774:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘unsigned char*’
+  cin>> root;
+        ^
+In file included from /usr/include/c++/4.8.3/iostream:40:0,
+                 from ../src/LinkedList.cpp:16:
+/usr/include/c++/4.8.3/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8.3/istream:779:5: note:   template argument deduction/substitution failed:
+../src/LinkedList.cpp:63:8: note:   cannot convert ‘root’ (type ‘Node’) to type ‘signed char*’
+  cin>> root;
+        ^
+../src/LinkedList.cpp:72:21: error: ‘createNode’ was not declared in this scope
+  case 1: createNode();
+                     ^
+../src/LinkedList.cpp:74:21: error: ‘deleteNode’ was not declared in this scope
+  case 2: deleteNode();
+                     ^
+make: *** [src/LinkedList.o] Error 1
+12:03:01 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:03:26 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:04:03 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+Finished building: ../src/Assignment1.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o   
+Finished building target: Assignment1
+ 
+12:04:06 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:04:57 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+Finished building: ../src/Assignment1.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o   
+Finished building target: Assignment1
+ 
+12:05:01 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:06:40 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+Finished building: ../src/Assignment1.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o   
+Finished building target: Assignment1
+ 
+12:06:44 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:08:16 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+Finished building: ../src/Assignment1.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o   
+Finished building target: Assignment1
+ 
+12:08:18 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:32:03 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+../src/Assignment1.cpp: In member function ‘void Tree::MirrorImage(Tree)’:
+../src/Assignment1.cpp:87:14: error: variable or field ‘Copy’ declared void
+   void Copy(n){
+              ^
+make: *** [src/Assignment1.o] Error 1
+12:32:35 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+../src/Assignment1.cpp: In function ‘int main()’:
+../src/Assignment1.cpp:101:4: error: ‘class Tree’ has no member named ‘MirrorImage’
+  C.MirrorImage(A);
+    ^
+make: *** [src/Assignment1.o] Error 1
+12:32:38 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+../src/Assignment1.cpp: In function ‘int main()’:
+../src/Assignment1.cpp:101:4: error: ‘class Tree’ has no member named ‘MirrorImage’
+  C.MirrorImage(A);
+    ^
+make: *** [src/Assignment1.o] Error 1
+12:32:47 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+../src/Assignment1.cpp: In function ‘int main()’:
+../src/Assignment1.cpp:101:4: error: ‘class Tree’ has no member named ‘MirrorImage’
+  C.MirrorImage(A);
+    ^
+make: *** [src/Assignment1.o] Error 1
+12:32:50 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+../src/Assignment1.cpp: In function ‘int main()’:
+../src/Assignment1.cpp:101:4: error: ‘class Tree’ has no member named ‘MirrorImage’
+  C.MirrorImage(A);
+    ^
+make: *** [src/Assignment1.o] Error 1
+12:33:04 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+Finished building: ../src/Assignment1.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o   
+Finished building target: Assignment1
+ 
+12:33:06 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:59:35 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+../src/Assignment1.cpp: In member function ‘void Tree::MirrorImage(Tree)’:
+../src/Assignment1.cpp:87:14: error: variable or field ‘Copy’ declared void
+   void Copy(n){
+              ^
+../src/Assignment1.cpp: In function ‘int main()’:
+../src/Assignment1.cpp:123:7: error: jump to case label [-fpermissive]
+  case 2: A.inorderRecursive(A.root);
+       ^
+../src/Assignment1.cpp:120:15: error:   crosses initialization of ‘Tree A’
+  case 1: Tree A;
+               ^
+make: *** [src/Assignment1.o] Error 1
+12:59:38 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+../src/Assignment1.cpp: In member function ‘void Tree::MirrorImage(Tree)’:
+../src/Assignment1.cpp:87:14: error: variable or field ‘Copy’ declared void
+   void Copy(n){
+              ^
+../src/Assignment1.cpp: In function ‘int main()’:
+../src/Assignment1.cpp:123:7: error: jump to case label [-fpermissive]
+  case 2: A.inorderRecursive(A.root);
+       ^
+../src/Assignment1.cpp:120:15: error:   crosses initialization of ‘Tree A’
+  case 1: Tree A;
+               ^
+make: *** [src/Assignment1.o] Error 1
+13:00:03 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+../src/Assignment1.cpp: In member function ‘void Tree::MirrorImage(Tree)’:
+../src/Assignment1.cpp:87:14: error: variable or field ‘Copy’ declared void
+   void Copy(n){
+              ^
+make: *** [src/Assignment1.o] Error 1
+13:00:06 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+../src/Assignment1.cpp: In member function ‘void Tree::MirrorImage(Tree)’:
+../src/Assignment1.cpp:87:14: error: variable or field ‘Copy’ declared void
+   void Copy(n){
+              ^
+make: *** [src/Assignment1.o] Error 1
+13:00:41 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node;
+                   ^
+Finished building: ../src/Assignment1.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o   
+Finished building target: Assignment1
+ 
+13:00:57 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:24: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  Node *root = new Node();
+                        ^
+Finished building: ../src/Assignment1.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o   
+Finished building target: Assignment1
+ 
+13:01:04 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:35:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+Finished building: ../src/Assignment1.cpp
+  Node *root = new Node;
+                   ^
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o   
+Finished building target: Assignment1
+ 
+13:01:44 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+13:01:50 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+13:01:53 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
