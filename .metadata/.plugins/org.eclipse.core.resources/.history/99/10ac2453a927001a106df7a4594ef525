@@ -89,29 +89,6 @@ public:
 			inorderRecursive(n->right);
 		}
 	}
-	void preorderRecursive(Node *n){
-		if(n != NULL){
-			cout<<n->data<<" ";
-			inorderRecursive(n->left);
-			inorderRecursive(n->right);
-		}
-	}
-	void postorderRecursive(Node *n){
-		if(n != NULL){
-			inorderRecursive(n->left);
-			inorderRecursive(n->right);
-			cout<<n->data<<" ";
-		}
-	}
-	void inorderNONRecursive(Node *n){
-
-	}
-	void preorderNONRecursive(Node *n){
-
-	}
-	void postorderNONRecursive(Node *n){
-
-	}
 };
 
 int main() {
@@ -148,7 +125,7 @@ a:
 			break;
 	case 5: A.preorderNONRecursive(A.root);
 			cout<<endl;
-			break;
+			break:
 	case 6: A.postorderRecursive(A.root);
 			cout<<endl;
 			break;

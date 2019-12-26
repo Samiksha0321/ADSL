@@ -89,29 +89,6 @@ public:
 			inorderRecursive(n->right);
 		}
 	}
-	void preorderRecursive(Node *n){
-		if(n != NULL){
-			cout<<n->data<<" ";
-			inorderRecursive(n->left);
-			inorderRecursive(n->right);
-		}
-	}
-	void postorderRecursive(Node *n){
-		if(n != NULL){
-			inorderRecursive(n->left);
-			inorderRecursive(n->right);
-			cout<<n->data<<" ";
-		}
-	}
-	void inorderNONRecursive(Node *n){
-
-	}
-	void preorderNONRecursive(Node *n){
-
-	}
-	void postorderNONRecursive(Node *n){
-
-	}
 };
 
 int main() {
@@ -123,7 +100,7 @@ int main() {
 
 	Tree C;
 	//C.MirrorImage(A);
-a:
+
 	int option;
 	cout<<"Enter"
 			"1. Create Tree"
@@ -138,24 +115,7 @@ a:
 	case 1: A.CreateTree();
 			break;
 	case 2: A.inorderRecursive(A.root);
-			cout<<endl;
-			break;
-	case 3: A.inorderNONRecursive(A.root);
-			cout<<endl;
-			break;
-	case 4: A.preorderRecursive(A.root);
-			cout<<endl;
-			break;
-	case 5: A.preorderNONRecursive(A.root);
-			cout<<endl;
-			break;
-	case 6: A.postorderRecursive(A.root);
-			cout<<endl;
-			break;
-	case 7: A.postorderNONRecursive(A.root);
-			cout<<endl;
-			break;
 	}
-goto a;
+
 	return 0;
 }

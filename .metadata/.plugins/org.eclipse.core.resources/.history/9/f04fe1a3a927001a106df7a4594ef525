@@ -103,13 +103,13 @@ public:
 			cout<<n->data<<" ";
 		}
 	}
-	void inorderNONRecursive(Node *n){
+	void inorderNONRecursive(){
 
 	}
-	void preorderNONRecursive(Node *n){
+	void preorderNONRecursive(){
 
 	}
-	void postorderNONRecursive(Node *n){
+	void postorderNONRecursive(){
 
 	}
 };
@@ -148,7 +148,7 @@ a:
 			break;
 	case 5: A.preorderNONRecursive(A.root);
 			cout<<endl;
-			break;
+			break:
 	case 6: A.postorderRecursive(A.root);
 			cout<<endl;
 			break;
