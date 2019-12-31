@@ -11,32 +11,38 @@
 	b)Erase all nodes in a binary tree    											(done)
 	c)Create a mirror image of the tree												(done)
 	d)Check two binary trees are equal or not
-	e)Inorder, Preorder, Postorder traversal of tree(recursive and non-recursive)	(done)
+	e)Inorder, Preorder, Postorder traversal of tree(recursive and non-recursive)	(recur done)
 	f)Print internal and leaf nodes													(done)
  */
 #include <iostream>
 #include<bits/stdc++.h>
 using namespace std;
+stack <int> leaf;
+stack <int> internal;
 
 class Node{
-public:
+
 	int data;
 	Node *right;
 	Node *left;
+public:
 	Node(){
 		data = 0;
 		right = NULL;
 		left = NULL;
 	}
+	friend class Tree;
 };
 
 class Tree{
-public:
-	Node *root = new Node;
 
+	Node *root;
+public:
+	Tree(){
+		root=NULL;
+	}
 	void CreateTree(){
 
-		root = NULL;
 		char c;
 		do{
 			Node *p = new Node;
@@ -76,12 +82,9 @@ public:
 			cin>>c;
 		}while(c == 'y');
 	}
-
-	void EraseTree(){
-
+	void callinorderRecursive(){
+		inorderRecursive(root);
 	}
-
-
 	void inorderRecursive(Node *root){
 		if(root != NULL){
 			inorderRecursive(root->left);
@@ -89,102 +92,132 @@ public:
 			inorderRecursive(root->right);
 		}
 	}
+
+	void callpreorderRecursive(){
+		preorderRecursive(root);
+	}
 	void preorderRecursive(Node *n){
 		if(n != NULL){
 			cout<<n->data<<" ";
-			inorderRecursive(n->left);
-			inorderRecursive(n->right);
+			preorderRecursive(n->left);
+			preorderRecursive(n->right);
 		}
+	}
+
+	void callpostorderRecursive(){
+		postorderRecursive(root);
 	}
 	void postorderRecursive(Node *n){
 			if(n != NULL){
-				inorderRecursive(n->left);
-				inorderRecursive(n->right);
+				postorderRecursive(n->left);
+				postorderRecursive(n->right);
 				cout<<n->data<<" ";
 			}
 		}
-	void inorderNONRecursive(Node *n){
+	void inorderNONRecursive(){
 
 	}
-	void preorderNONRecursive(Node *n){
+	void preorderNONRecursive(){
 
 	}
-	void postorderNONRecursive(Node *n){
+	void postorderNONRecursive(){
 
 	}
 
+
+	void calleraseNodes(){
+		eraseNodes(root);
+	}
 	void eraseNodes(Node *n){
 		if(n != NULL){
-			inorderRecursive(n->left);
-			inorderRecursive(n->right);
+			eraseNodes(n->left);
+			eraseNodes(n->right);
 			cout<<n->data<<" is deleted\n";
+			delete (n);
 		}
 	}
 
-	void mirrorTree(Node *root){
-		if(root != NULL){
-			mirrorTree(root->left);
-			mirrorTree(root->right);
-			swap(root->left, root->right);
+	void callmirrorTree(){
+		mirrorTree(root);
+	}
+	void mirrorTree(Node *n){
+		if(n != NULL){
+			mirrorTree(n->left);
+			mirrorTree(n->right);
+			swap(n->left, n->right);
 		}
 	}
 
-	void print_Leaf_and_Internal(Node *root){
+	void callprint_Leaf_and_Internal(){
+		print_Leaf_and_Internal(root);
 
+		cout<<"\nThe leaf nodes are:\t";
+		while(leaf.size() != 0){
+			cout<<leaf.top()<<"\t";
+			leaf.pop();
+		}
+		cout<<"\nThe internal nodes are:\t";
+		while(internal.size() != 0){
+			cout<<internal.top()<<"\t";
+			internal.pop();
+		}
+	}
+	void print_Leaf_and_Internal(Node *n){
+
+		print_Leaf_and_Internal(n->left);
+		print_Leaf_and_Internal(n->right);
+		if(n->left==NULL && n->right==NULL)
+			leaf.push(n->data);
+		else
+			internal.push(n->data);
 	}
 };
 
 int main() {
-
 	Tree A;
 
-	//Tree B;
-	//B = A;
-
-	Tree C;
-	//C.MirrorImage(A);
 a:
 	int option;
 	cout<<"Enter"
-			"1. Create Tree"
-			"2. Inorder Recursive"
-			"3. Inorder Non-Recursive"
-			"4. Preorder Recursive"
-			"5. Preorder Non-Recursive"
-			"6. Postorder Recursive"
-			"7. Postorder Non-Recursive"
-			"8. Erase all nodes"
-			"9. Mirror of the tree"
-			"10. Print internal and leaf nodes";
+			"\n1. Create Tree"
+			"\n2. Inorder Recursive"
+			"\n3. Inorder Non-Recursive"
+			"\n4. Preorder Recursive"
+			"\n5. Preorder Non-Recursive"
+			"\n6. Postorder Recursive"
+			"\n7. Postorder Non-Recursive"
+			"\n8. Erase all nodes"
+			"\n9. Mirror of the tree"
+			"\n10. Print internal and leaf nodes";
 	cin>>option;
 	switch(option){
 	case 1: A.CreateTree();
 			break;
-	case 2: A.inorderRecursive(A.root);
+	case 2: A.callinorderRecursive();
 			cout<<endl;
 			break;
-	case 3: A.inorderNONRecursive(A.root);
+	case 3: A.inorderNONRecursive();
 			cout<<endl;
 			break;
-	case 4: A.preorderRecursive(A.root);
+	case 4: A.callpreorderRecursive();
 			cout<<endl;
 			break;
-	case 5: A.preorderNONRecursive(A.root);
+	case 5: A.preorderNONRecursive();
 			cout<<endl;
 			break;
-	case 6: A.postorderRecursive(A.root);
+	case 6: A.callpostorderRecursive();
 			cout<<endl;
 			break;
-	case 7: A.postorderNONRecursive(A.root);
+	case 7: A.postorderNONRecursive();
 			cout<<endl;
 			break;
-	case 8: A.eraseNodes(A.root);
+	case 8: A.calleraseNodes();
 			break;
-	case 9: A.mirrorTree(A.root);
+	case 9: A.callmirrorTree();
 			break;
-	case 10:A.print_Leaf_and_Internal(A.root);
+	case 10:A.callprint_Leaf_and_Internal();
 			break;
-	default:cout<<"\tEnter valid option."
+	default:cout<<"\tEnter valid option.";
 	}
 goto a;
 	return 0;
