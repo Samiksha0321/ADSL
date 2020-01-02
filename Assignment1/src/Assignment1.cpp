@@ -18,7 +18,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 stack <int> leaf;
-stack <int> internal;
+stack <int> internal_node;
 
 class Node{
 
@@ -157,9 +157,9 @@ public:
 			leaf.pop();
 		}
 		cout<<"\nThe internal nodes are:\t";
-		while(internal.size() != 0){
-			cout<<internal.top()<<"\t";
-			internal.pop();
+		while(internal_node.size() != 0){
+			cout<<internal_node.top()<<"\t";
+			internal_node.pop();
 		}
 	}
 	void print_Leaf_and_Internal(Node *n){
@@ -169,7 +169,7 @@ public:
 		if(n->left==NULL && n->right==NULL)
 			leaf.push(n->data);
 		else
-			internal.push(n->data);
+			internal_node.push(n->data);
 	}
 };
 

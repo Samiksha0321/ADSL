@@ -7338,3 +7338,1159 @@ In file included from /usr/include/c++/4.8.3/ios:42:0,
    internal(ios_base& __base)
    ^
 make: *** [src/Assignment1.o] Error 1
+11:05:11 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp: In member function ‘void Tree::callprint_Leaf_and_Internal()’:
+../src/Assignment1.cpp:160:9: error: reference to ‘internal’ is ambiguous
+   while(internal.size() != 0){
+         ^
+../src/Assignment1.cpp:21:13: note: candidates are: std::stack<int> internal
+ stack <int> internal;
+             ^
+In file included from /usr/include/c++/4.8.3/ios:42:0,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/Assignment1.cpp:17:
+/usr/include/c++/4.8.3/bits/ios_base.h:908:3: note:                 std::ios_base& std::internal(std::ios_base&)
+   internal(ios_base& __base)
+   ^
+../src/Assignment1.cpp:161:10: error: reference to ‘internal’ is ambiguous
+    cout<<internal.top()<<"\t";
+          ^
+../src/Assignment1.cpp:21:13: note: candidates are: std::stack<int> internal
+ stack <int> internal;
+             ^
+In file included from /usr/include/c++/4.8.3/ios:42:0,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/Assignment1.cpp:17:
+/usr/include/c++/4.8.3/bits/ios_base.h:908:3: note:                 std::ios_base& std::internal(std::ios_base&)
+   internal(ios_base& __base)
+   ^
+../src/Assignment1.cpp:162:4: error: reference to ‘internal’ is ambiguous
+    internal.pop();
+    ^
+../src/Assignment1.cpp:21:13: note: candidates are: std::stack<int> internal
+ stack <int> internal;
+             ^
+In file included from /usr/include/c++/4.8.3/ios:42:0,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/Assignment1.cpp:17:
+/usr/include/c++/4.8.3/bits/ios_base.h:908:3: note:                 std::ios_base& std::internal(std::ios_base&)
+   internal(ios_base& __base)
+   ^
+../src/Assignment1.cpp: In member function ‘void Tree::print_Leaf_and_Internal(Node*)’:
+../src/Assignment1.cpp:172:4: error: reference to ‘internal’ is ambiguous
+    internal.push(n->data);
+    ^
+../src/Assignment1.cpp:21:13: note: candidates are: std::stack<int> internal
+ stack <int> internal;
+             ^
+In file included from /usr/include/c++/4.8.3/ios:42:0,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/Assignment1.cpp:17:
+/usr/include/c++/4.8.3/bits/ios_base.h:908:3: note:                 std::ios_base& std::internal(std::ios_base&)
+   internal(ios_base& __base)
+   ^
+make: *** [src/Assignment1.o] Error 1
+11:06:37 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+Finished building: ../src/Assignment1.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o   
+Finished building target: Assignment1
+ 
+11:16:54 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:16:55 **** Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 
+11:17:18 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:17:18 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 
+11:18:54 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:18:54 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In constructor ‘Node::Node()’:
+../src/Assignment2.cpp:29:13: error: ‘a’ was not declared in this scope
+   keyword = a;
+             ^
+make: *** [src/Assignment2.o] Error 1
+11:19:14 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:19:14 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In constructor ‘Node::Node()’:
+../src/Assignment2.cpp:30:11: error: no match for ‘operator=’ (operand types are ‘std::vector<std::basic_string<char> >’ and ‘char’)
+   meaning = 'a';
+           ^
+../src/Assignment2.cpp:30:11: note: candidate is:
+In file included from /usr/include/c++/4.8.3/vector:69:0,
+                 from /usr/include/c++/4.8.3/queue:61,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:85,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/vector.tcc:160:5: note: std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >]
+     vector<_Tp, _Alloc>::
+     ^
+/usr/include/c++/4.8.3/bits/vector.tcc:160:5: note:   no known conversion for argument 1 from ‘char’ to ‘const std::vector<std::basic_string<char> >&’
+make: *** [src/Assignment2.o] Error 1
+11:30:27 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:30:28 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In member function ‘void Dictionary::create()’:
+../src/Assignment2.cpp:48:6: error: no match for ‘operator>>’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘std::vector<std::basic_string<char> >’)
+   cin>>p->meaning;
+      ^
+../src/Assignment2.cpp:48:6: note: candidates are:
+In file included from /usr/include/c++/4.8.3/sstream:38:0,
+                 from /usr/include/c++/4.8.3/complex:45,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/istream:120:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(__istream_type& (*__pf)(__istream_type&))
+       ^
+/usr/include/c++/4.8.3/istream:120:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&) {aka std::basic_istream<char>& (*)(std::basic_istream<char>&)}’
+/usr/include/c++/4.8.3/istream:124:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator>>(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.8.3/istream:124:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.8.3/istream:131:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(ios_base& (*__pf)(ios_base&))
+       ^
+/usr/include/c++/4.8.3/istream:131:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.8.3/istream:168:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(bool& __n)
+       ^
+/usr/include/c++/4.8.3/istream:168:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘bool&’
+/usr/include/c++/4.8.3/istream:172:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(short& __n);
+       ^
+/usr/include/c++/4.8.3/istream:172:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘short int&’
+/usr/include/c++/4.8.3/istream:175:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned short& __n)
+       ^
+/usr/include/c++/4.8.3/istream:175:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘short unsigned int&’
+/usr/include/c++/4.8.3/istream:179:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(int& __n);
+       ^
+/usr/include/c++/4.8.3/istream:179:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘int&’
+/usr/include/c++/4.8.3/istream:182:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned int& __n)
+       ^
+/usr/include/c++/4.8.3/istream:182:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘unsigned int&’
+/usr/include/c++/4.8.3/istream:186:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:186:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘long int&’
+/usr/include/c++/4.8.3/istream:190:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:190:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘long unsigned int&’
+/usr/include/c++/4.8.3/istream:195:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:195:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘long long int&’
+/usr/include/c++/4.8.3/istream:199:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long long& __n)
+       ^
+/usr/include/c++/4.8.3/istream:199:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘long long unsigned int&’
+/usr/include/c++/4.8.3/istream:214:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(float& __f)
+       ^
+/usr/include/c++/4.8.3/istream:214:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘float&’
+/usr/include/c++/4.8.3/istream:218:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(double& __f)
+       ^
+/usr/include/c++/4.8.3/istream:218:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘double&’
+/usr/include/c++/4.8.3/istream:222:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long double& __f)
+       ^
+/usr/include/c++/4.8.3/istream:222:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘long double&’
+/usr/include/c++/4.8.3/istream:235:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(void*& __p)
+       ^
+/usr/include/c++/4.8.3/istream:235:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘void*&’
+/usr/include/c++/4.8.3/istream:259:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+       operator>>(__streambuf_type* __sb);
+       ^
+/usr/include/c++/4.8.3/istream:259:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘std::basic_istream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/4.8.3/string:53:0,
+                 from /usr/include/c++/4.8.3/bitset:47,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:65,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8.3/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   ‘std::vector<std::basic_string<char> >’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:65:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bitset:1453:5: note: template<class _CharT, class _Traits, long unsigned int _Nb> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::bitset<_Nb>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is, bitset<_Nb>& __x)
+     ^
+/usr/include/c++/4.8.3/bitset:1453:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   ‘std::vector<std::basic_string<char> >’ is not derived from ‘std::bitset<_Nb>’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/istream:879:0,
+                 from /usr/include/c++/4.8.3/sstream:38,
+                 from /usr/include/c++/4.8.3/complex:45,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8.3/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   mismatched types ‘_CharT2*’ and ‘std::vector<std::basic_string<char> >’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/istream:879:0,
+                 from /usr/include/c++/4.8.3/sstream:38,
+                 from /usr/include/c++/4.8.3/complex:45,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8.3/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘std::vector<std::basic_string<char> >’)
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/sstream:38:0,
+                 from /usr/include/c++/4.8.3/complex:45,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8.3/istream:727:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   cannot convert ‘p->Node::meaning’ (type ‘std::vector<std::basic_string<char> >’) to type ‘unsigned char&’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/sstream:38:0,
+                 from /usr/include/c++/4.8.3/complex:45,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8.3/istream:732:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   cannot convert ‘p->Node::meaning’ (type ‘std::vector<std::basic_string<char> >’) to type ‘signed char&’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/sstream:38:0,
+                 from /usr/include/c++/4.8.3/complex:45,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8.3/istream:774:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   cannot convert ‘p->Node::meaning’ (type ‘std::vector<std::basic_string<char> >’) to type ‘unsigned char*’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/sstream:38:0,
+                 from /usr/include/c++/4.8.3/complex:45,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8.3/istream:779:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   cannot convert ‘p->Node::meaning’ (type ‘std::vector<std::basic_string<char> >’) to type ‘signed char*’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/complex:491:5: note: template<class _Tp, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::complex<_Tp>&)
+     operator>>(basic_istream<_CharT, _Traits>& __is, complex<_Tp>& __x)
+     ^
+/usr/include/c++/4.8.3/complex:491:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   ‘std::vector<std::basic_string<char> >’ is not derived from ‘std::complex<_Tp>’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:71:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/iomanip:68:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Resetiosflags)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Resetiosflags __f)
+     ^
+/usr/include/c++/4.8.3/iomanip:68:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   cannot convert ‘p->Node::meaning’ (type ‘std::vector<std::basic_string<char> >’) to type ‘std::_Resetiosflags’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:71:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/iomanip:98:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setiosflags)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Setiosflags __f)
+     ^
+/usr/include/c++/4.8.3/iomanip:98:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   cannot convert ‘p->Node::meaning’ (type ‘std::vector<std::basic_string<char> >’) to type ‘std::_Setiosflags’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:71:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/iomanip:129:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setbase)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Setbase __f)
+     ^
+/usr/include/c++/4.8.3/iomanip:129:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   cannot convert ‘p->Node::meaning’ (type ‘std::vector<std::basic_string<char> >’) to type ‘std::_Setbase’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:71:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/iomanip:167:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setfill<_CharT>)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Setfill<_CharT> __f)
+     ^
+/usr/include/c++/4.8.3/iomanip:167:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   ‘std::vector<std::basic_string<char> >’ is not derived from ‘std::_Setfill<_CharT>’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:71:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/iomanip:197:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setprecision)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Setprecision __f)
+     ^
+/usr/include/c++/4.8.3/iomanip:197:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   cannot convert ‘p->Node::meaning’ (type ‘std::vector<std::basic_string<char> >’) to type ‘std::_Setprecision’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:71:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/iomanip:227:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setw)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Setw __f)
+     ^
+/usr/include/c++/4.8.3/iomanip:227:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   cannot convert ‘p->Node::meaning’ (type ‘std::vector<std::basic_string<char> >’) to type ‘std::_Setw’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/valarray:587:0,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:94,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/valarray_after.h:411:5: note: template<class _Dom1, class _Dom2> std::_Expr<std::_BinClos<std::__shift_right, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__shift_right, typename _Dom1::value_type>::result_type> std::operator>>(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::_Expr<_Dom2, typename _Dom2::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(>>, __shift_right)
+     ^
+/usr/include/c++/4.8.3/bits/valarray_after.h:411:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/valarray:587:0,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:94,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/valarray_after.h:411:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__shift_right, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__shift_right, typename _Dom1::value_type>::result_type> std::operator>>(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)
+     _DEFINE_EXPR_BINARY_OPERATOR(>>, __shift_right)
+     ^
+/usr/include/c++/4.8.3/bits/valarray_after.h:411:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/valarray:587:0,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:94,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/valarray_after.h:411:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__shift_right, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__shift_right, typename _Dom1::value_type>::result_type> std::operator>>(const typename _Dom::value_type&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(>>, __shift_right)
+     ^
+/usr/include/c++/4.8.3/bits/valarray_after.h:411:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   ‘std::vector<std::basic_string<char> >’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/valarray:587:0,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:94,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/valarray_after.h:411:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__shift_right, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__shift_right, typename _Dom1::value_type>::result_type> std::operator>>(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::valarray<typename _Dom::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(>>, __shift_right)
+     ^
+/usr/include/c++/4.8.3/bits/valarray_after.h:411:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/valarray:587:0,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:94,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/valarray_after.h:411:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__shift_right, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__shift_right, typename _Dom1::value_type>::result_type> std::operator>>(const std::valarray<typename _Dom::value_type>&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(>>, __shift_right)
+     ^
+/usr/include/c++/4.8.3/bits/valarray_after.h:411:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::valarray<typename _Dom::value_type>’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:94:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/valarray:1176:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__shift_right, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__shift_right, _Tp>::result_type> std::operator>>(const std::valarray<_Tp>&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(>>, __shift_right)
+ ^
+/usr/include/c++/4.8.3/valarray:1176:1: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::valarray<_Tp>’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:94:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/valarray:1176:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__shift_right, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__shift_right, _Tp>::result_type> std::operator>>(const std::valarray<_Tp>&, const _Tp&)
+ _DEFINE_BINARY_OPERATOR(>>, __shift_right)
+ ^
+/usr/include/c++/4.8.3/valarray:1176:1: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::valarray<_Tp>’
+   cin>>p->meaning;
+           ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:94:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/valarray:1176:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__shift_right, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__shift_right, _Tp>::result_type> std::operator>>(const _Tp&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(>>, __shift_right)
+ ^
+/usr/include/c++/4.8.3/valarray:1176:1: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:48:11: note:   ‘std::vector<std::basic_string<char> >’ is not derived from ‘const std::valarray<_Tp>’
+   cin>>p->meaning;
+           ^
+make: *** [src/Assignment2.o] Error 1
+11:43:46 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:43:47 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 
+11:46:20 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:46:20 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 
+11:46:24 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+11:47:36 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:47:36 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 
+11:47:38 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+11:48:25 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:48:25 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 
+11:48:27 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+11:58:33 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:58:33 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 
+11:58:41 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+11:59:13 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+11:59:35 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:59:35 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 
+11:59:39 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+12:00:22 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:00:22 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In member function ‘void Dictionary::create()’:
+../src/Assignment2.cpp:57:29: error: no matching function for call to ‘getline(std::istream&, std::string [(((sizetype)(((ssizetype)no_of_meaning) + -1)) + 1)])’
+    getline(cin, push_meaning);
+                             ^
+../src/Assignment2.cpp:57:29: note: candidates are:
+In file included from /usr/include/c++/4.8.3/cstdio:42:0,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:46,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/stdio.h:678:20: note: __ssize_t getline(char**, size_t*, FILE*)
+ extern _IO_ssize_t getline (char **__restrict __lineptr,
+                    ^
+/usr/include/stdio.h:678:20: note:   candidate expects 3 arguments, 2 provided
+In file included from /usr/include/c++/4.8.3/string:52:0,
+                 from /usr/include/c++/4.8.3/bitset:47,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:65,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/basic_string.h:2793:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     getline(basic_istream<_CharT, _Traits>& __is,
+     ^
+/usr/include/c++/4.8.3/bits/basic_string.h:2793:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:57:29: note:   mismatched types ‘std::basic_string<_CharT, _Traits, _Alloc>’ and ‘std::string [(((sizetype)(((ssizetype)no_of_meaning) + -1)) + 1)] {aka std::basic_string<char> [(((sizetype)(((ssizetype)no_of_meaning) + -1)) + 1)]}’
+    getline(cin, push_meaning);
+                             ^
+In file included from /usr/include/c++/4.8.3/string:53:0,
+                 from /usr/include/c++/4.8.3/bitset:47,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:65,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/basic_string.tcc:1068:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+     getline(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8.3/bits/basic_string.tcc:1068:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:57:29: note:   mismatched types ‘std::basic_string<_CharT, _Traits, _Alloc>’ and ‘std::string [(((sizetype)(((ssizetype)no_of_meaning) + -1)) + 1)] {aka std::basic_string<char> [(((sizetype)(((ssizetype)no_of_meaning) + -1)) + 1)]}’
+    getline(cin, push_meaning);
+                             ^
+make: *** [src/Assignment2.o] Error 1
+12:01:00 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:01:01 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 
+12:02:19 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:02:19 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 
+12:02:33 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:02:33 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 
+12:02:35 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+12:10:04 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:10:04 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In member function ‘void Dictionary::create()’:
+../src/Assignment2.cpp:67:8: error: expected primary-expression before ‘)’ token
+     if(){
+        ^
+../src/Assignment2.cpp:75:8: error: expected primary-expression before ‘)’ token
+     if(){
+        ^
+../src/Assignment2.cpp:84:3: error: expected ‘while’ before ‘}’ token
+   }
+   ^
+../src/Assignment2.cpp:84:3: error: expected ‘(’ before ‘}’ token
+../src/Assignment2.cpp:84:3: error: expected primary-expression before ‘}’ token
+../src/Assignment2.cpp:84:3: error: expected ‘)’ before ‘}’ token
+../src/Assignment2.cpp:84:3: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment2.o] Error 1
+12:10:43 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:10:43 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In member function ‘void Dictionary::create()’:
+../src/Assignment2.cpp:67:8: error: expected primary-expression before ‘)’ token
+     if(){
+        ^
+../src/Assignment2.cpp:75:8: error: expected primary-expression before ‘)’ token
+     if(){
+        ^
+make: *** [src/Assignment2.o] Error 1
+12:22:26 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:22:26 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In member function ‘void Dictionary::create()’:
+../src/Assignment2.cpp:48:24: error: ‘lower’ was not declared in this scope
+   cin>>lower(p->keyword);
+                        ^
+make: *** [src/Assignment2.o] Error 1
+12:22:35 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:22:35 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 
+12:26:53 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:26:53 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In member function ‘void Dictionary::create()’:
+../src/Assignment2.cpp:88:7: error: no match for ‘operator<<’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘char’)
+    cin<<c;
+       ^
+../src/Assignment2.cpp:88:7: note: candidates are:
+In file included from /usr/include/c++/4.8.3/string:52:0,
+                 from /usr/include/c++/4.8.3/bitset:47,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:65,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/basic_string.h:2753:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.8.3/bits/basic_string.h:2753:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:65:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bitset:1521:5: note: template<class _CharT, class _Traits, long unsigned int _Nb> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::bitset<_Nb>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.8.3/bitset:1521:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/istream:39:0,
+                 from /usr/include/c++/4.8.3/sstream:38,
+                 from /usr/include/c++/4.8.3/complex:45,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/4.8.3/ostream:471:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/istream:39:0,
+                 from /usr/include/c++/4.8.3/sstream:38,
+                 from /usr/include/c++/4.8.3/complex:45,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.8.3/ostream:476:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/istream:39:0,
+                 from /usr/include/c++/4.8.3/sstream:38,
+                 from /usr/include/c++/4.8.3/complex:45,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.8.3/ostream:482:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/istream:39:0,
+                 from /usr/include/c++/4.8.3/sstream:38,
+                 from /usr/include/c++/4.8.3/complex:45,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/4.8.3/ostream:488:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/istream:39:0,
+                 from /usr/include/c++/4.8.3/sstream:38,
+                 from /usr/include/c++/4.8.3/complex:45,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/4.8.3/ostream:493:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/istream:39:0,
+                 from /usr/include/c++/4.8.3/sstream:38,
+                 from /usr/include/c++/4.8.3/complex:45,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/4.8.3/ostream:513:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/ostream:609:0,
+                 from /usr/include/c++/4.8.3/istream:39,
+                 from /usr/include/c++/4.8.3/sstream:38,
+                 from /usr/include/c++/4.8.3/complex:45,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.8.3/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/istream:39:0,
+                 from /usr/include/c++/4.8.3/sstream:38,
+                 from /usr/include/c++/4.8.3/complex:45,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.8.3/ostream:530:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/istream:39:0,
+                 from /usr/include/c++/4.8.3/sstream:38,
+                 from /usr/include/c++/4.8.3/complex:45,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/4.8.3/ostream:543:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/istream:39:0,
+                 from /usr/include/c++/4.8.3/sstream:38,
+                 from /usr/include/c++/4.8.3/complex:45,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/4.8.3/ostream:548:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<char, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:66:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/complex:524:5: note: template<class _Tp, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::complex<_Tp>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, const complex<_Tp>& __x)
+     ^
+/usr/include/c++/4.8.3/complex:524:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:71:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/iomanip:76:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Resetiosflags)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+     ^
+/usr/include/c++/4.8.3/iomanip:76:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:71:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/iomanip:106:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setiosflags)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+     ^
+/usr/include/c++/4.8.3/iomanip:106:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:71:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/iomanip:140:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setbase)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+     ^
+/usr/include/c++/4.8.3/iomanip:140:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:71:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/iomanip:175:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setfill<_CharT>)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+     ^
+/usr/include/c++/4.8.3/iomanip:175:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:71:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/iomanip:205:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setprecision)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+     ^
+/usr/include/c++/4.8.3/iomanip:205:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:71:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/iomanip:235:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setw)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+     ^
+/usr/include/c++/4.8.3/iomanip:235:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/valarray:587:0,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:94,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/valarray_after.h:410:5: note: template<class _Dom1, class _Dom2> std::_Expr<std::_BinClos<std::__shift_left, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__shift_left, typename _Dom1::value_type>::result_type> std::operator<<(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::_Expr<_Dom2, typename _Dom2::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(<<, __shift_left)
+     ^
+/usr/include/c++/4.8.3/bits/valarray_after.h:410:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/valarray:587:0,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:94,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/valarray_after.h:410:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__shift_left, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__shift_left, typename _Dom1::value_type>::result_type> std::operator<<(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)
+     _DEFINE_EXPR_BINARY_OPERATOR(<<, __shift_left)
+     ^
+/usr/include/c++/4.8.3/bits/valarray_after.h:410:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/valarray:587:0,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:94,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/valarray_after.h:410:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__shift_left, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__shift_left, typename _Dom1::value_type>::result_type> std::operator<<(const typename _Dom::value_type&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(<<, __shift_left)
+     ^
+/usr/include/c++/4.8.3/bits/valarray_after.h:410:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   mismatched types ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’ and ‘char’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/valarray:587:0,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:94,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/valarray_after.h:410:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__shift_left, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__shift_left, typename _Dom1::value_type>::result_type> std::operator<<(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::valarray<typename _Dom::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(<<, __shift_left)
+     ^
+/usr/include/c++/4.8.3/bits/valarray_after.h:410:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/valarray:587:0,
+                 from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:94,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/bits/valarray_after.h:410:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__shift_left, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__shift_left, typename _Dom1::value_type>::result_type> std::operator<<(const std::valarray<typename _Dom::value_type>&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(<<, __shift_left)
+     ^
+/usr/include/c++/4.8.3/bits/valarray_after.h:410:5: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::valarray<typename _Dom::value_type>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:94:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/valarray:1175:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__shift_left, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__shift_left, _Tp>::result_type> std::operator<<(const std::valarray<_Tp>&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(<<, __shift_left)
+ ^
+/usr/include/c++/4.8.3/valarray:1175:1: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::valarray<_Tp>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:94:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/valarray:1175:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__shift_left, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__shift_left, _Tp>::result_type> std::operator<<(const std::valarray<_Tp>&, const _Tp&)
+ _DEFINE_BINARY_OPERATOR(<<, __shift_left)
+ ^
+/usr/include/c++/4.8.3/valarray:1175:1: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   ‘std::istream {aka std::basic_istream<char>}’ is not derived from ‘const std::valarray<_Tp>’
+    cin<<c;
+         ^
+In file included from /usr/include/c++/4.8.3/x86_64-redhat-linux/bits/stdc++.h:94:0,
+                 from ../src/Assignment2.cpp:17:
+/usr/include/c++/4.8.3/valarray:1175:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__shift_left, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__shift_left, _Tp>::result_type> std::operator<<(const _Tp&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(<<, __shift_left)
+ ^
+/usr/include/c++/4.8.3/valarray:1175:1: note:   template argument deduction/substitution failed:
+../src/Assignment2.cpp:88:9: note:   mismatched types ‘const std::valarray<_Tp>’ and ‘char’
+    cin<<c;
+         ^
+make: *** [src/Assignment2.o] Error 1
+12:27:00 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:27:01 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 
+12:27:04 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+12:32:27 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:32:27 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In function ‘int main()’:
+../src/Assignment2.cpp:107:4: error: ‘class Dictionary’ has no member named ‘call_display’
+  A.call_display();
+    ^
+make: *** [src/Assignment2.o] Error 1
+12:32:33 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:32:33 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 
+12:32:42 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+12:33:07 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+12:35:45 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:35:45 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In member function ‘void Dictionary::display(Node*)’:
+../src/Assignment2.cpp:98:12: error: ‘p’ was not declared in this scope
+    display(p->left);
+            ^
+make: *** [src/Assignment2.o] Error 1
+12:35:51 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:35:51 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In member function ‘void Dictionary::display(Node*)’:
+../src/Assignment2.cpp:98:12: error: ‘p’ was not declared in this scope
+    display(p->left);
+            ^
+make: *** [src/Assignment2.o] Error 1
+12:37:06 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:37:06 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 
+12:37:08 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+12:45:52 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:45:52 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 
+12:56:07 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:56:08 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In member function ‘void Dictionary::descending_display(Node*)’:
+../src/Assignment2.cpp:112:33: error: no matching function for call to ‘Dictionary::descending_display(std::string&)’
+    descending_display(n->keyword);
+                                 ^
+../src/Assignment2.cpp:112:33: note: candidate is:
+../src/Assignment2.cpp:108:7: note: void Dictionary::descending_display(Node*)
+  void descending_display(Node *n){
+       ^
+../src/Assignment2.cpp:108:7: note:   no known conversion for argument 1 from ‘std::string {aka std::basic_string<char>}’ to ‘Node*’
+make: *** [src/Assignment2.o] Error 1
+12:57:22 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:57:22 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 

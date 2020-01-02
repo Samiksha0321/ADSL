@@ -1,0 +1,109 @@
+//============================================================================
+// Name        : Assignment2.cpp
+// Author      : 21153
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+//
+/*	A Dictionary stores keywords & its meanings. Provide facility for
+	adding new keywords, deleting keywords, updating values of any
+	entry, assign a given tree into another tree (=). Provide facility to
+	display whole data sorted in ascending/ Descending order. Also find
+	how many maximum comparisons may require for finding any
+	keyword. Use Binary Search Tree for implementation.
+ */
+
+#include <bits/stdc++.h>
+#include<vector>
+#include<string>
+using namespace std;
+
+class Node{
+	string keyword;
+	vector<string>meaning;
+	Node *left;
+	Node *right;
+public:
+	Node(){
+		keyword = 'a';
+		left = NULL;
+		right = NULL;
+	}
+	friend class Dictionary;
+};
+
+class Dictionary{
+	Node *root;
+public:
+	Dictionary(){
+		root = NULL;
+	}
+
+	void create(){
+		char c;
+		do
+		{
+			Node *p = new Node;
+
+			cout<<"Enter the keyword: ";
+			cin>>p->keyword;
+			cout<<"How many meaning(s) of "<<p->keyword<<"?";
+			int no_of_meaning;
+			cin>>no_of_meaning;
+			string push_meaning;
+			for(int i=1; i<=no_of_meaning; i++){
+				cout<<"Enter meaning "<<i<<": ";
+				cin>>push_meaning;
+				p->meaning.push_back(push_meaning);
+			}
+
+			if(root==NULL)
+				root = p;
+			else{
+				Node *q= new Node;
+				q=root;
+				int flag=0;
+				do
+				{
+					if(p->keyword.compare(q->keyword) < 0){
+						if(q->left==NULL){
+							q->left = p;
+							flag=1;
+						}
+						else
+							q = q->left;
+					}
+					if(p->keyword.compare(q->keyword) > 0){
+						if(q->right==NULL){
+							q->right = p;
+							flag=1;
+						}
+						else
+							q = q->right;
+					}
+				}while(flag==0);
+			}
+			cout<<"Enter another keyword(y/n)?";
+			cin>>c;
+		}while(c=='y' || c=='Y');
+	}
+
+
+	void call_display(){
+		display(root);
+	}
+	void display(Node *p){
+		display(p->left);
+		cout<<p->keyword;
+		display(p->right);
+	}
+};
+
+int main() {
+
+	Dictionary A;
+	A.create();
+	A.call_display();
+	return 0;
+}

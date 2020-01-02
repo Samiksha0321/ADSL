@@ -1,0 +1,64 @@
+//============================================================================
+// Name        : Assignment2.cpp
+// Author      : 21153
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+//
+/*	A Dictionary stores keywords & its meanings. Provide facility for
+	adding new keywords, deleting keywords, updating values of any
+	entry, assign a given tree into another tree (=). Provide facility to
+	display whole data sorted in ascending/ Descending order. Also find
+	how many maximum comparisons may require for finding any
+	keyword. Use Binary Search Tree for implementation.
+ */
+
+#include <bits/stdc++.h>
+#include<vector>
+using namespace std;
+
+class Node{
+public:
+	string keyword;
+	vector<string>meaning;
+	Node *left;
+	Node *right;
+
+	Node(){
+		keyword = 'a';
+		left = NULL;
+		right = NULL;
+	}
+};
+
+class Dictionary{
+	Node *root;
+public:
+	Dictionary(){
+		root = NULL;
+	}
+
+	void create(){
+
+		Node *p = new Node;
+		cout<<"Enter the keyword: ";
+		cin>>p->keyword;
+
+		cout<<"How many meaning(s) of "<<p->keyword<<"?";
+		int no_of_meaning;
+		cin>>no_of_meaning;
+		for(int i=1; i<=no_of_meaning; i++){
+			cout<<"Enter meaning "<<i<<": ";
+			string push_meaning;
+			cin>>push_meaning;
+			p->meaning.push_back(push_meaning);
+		}
+
+	}
+};
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

@@ -1,63 +1,6 @@
-12:54:18 **** Incremental Build of configuration Debug for project Assignment1 ****
+12:57:22 **** Incremental Build of configuration Debug for project Assignment1 ****
 make all 
-Building file: ../src/Assignment1.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.d" -o "src/Assignment1.o" "../src/Assignment1.cpp"
-../src/Assignment1.cpp: In member function ‘void Tree::callprint_Leaf_and_Internal()’:
-../src/Assignment1.cpp:160:9: error: reference to ‘internal’ is ambiguous
-   while(internal.size() != 0){
-         ^
-../src/Assignment1.cpp:21:13: note: candidates are: std::stack<int> internal
- stack <int> internal;
-             ^
-In file included from /usr/include/c++/4.8.3/ios:42:0,
-                 from /usr/include/c++/4.8.3/ostream:38,
-                 from /usr/include/c++/4.8.3/iostream:39,
-                 from ../src/Assignment1.cpp:17:
-/usr/include/c++/4.8.3/bits/ios_base.h:908:3: note:                 std::ios_base& std::internal(std::ios_base&)
-   internal(ios_base& __base)
-   ^
-../src/Assignment1.cpp:161:10: error: reference to ‘internal’ is ambiguous
-    cout<<internal.top()<<"\t";
-          ^
-../src/Assignment1.cpp:21:13: note: candidates are: std::stack<int> internal
- stack <int> internal;
-             ^
-In file included from /usr/include/c++/4.8.3/ios:42:0,
-                 from /usr/include/c++/4.8.3/ostream:38,
-                 from /usr/include/c++/4.8.3/iostream:39,
-                 from ../src/Assignment1.cpp:17:
-/usr/include/c++/4.8.3/bits/ios_base.h:908:3: note:                 std::ios_base& std::internal(std::ios_base&)
-   internal(ios_base& __base)
-   ^
-../src/Assignment1.cpp:162:4: error: reference to ‘internal’ is ambiguous
-    internal.pop();
-    ^
-../src/Assignment1.cpp:21:13: note: candidates are: std::stack<int> internal
- stack <int> internal;
-             ^
-In file included from /usr/include/c++/4.8.3/ios:42:0,
-                 from /usr/include/c++/4.8.3/ostream:38,
-                 from /usr/include/c++/4.8.3/iostream:39,
-                 from ../src/Assignment1.cpp:17:
-/usr/include/c++/4.8.3/bits/ios_base.h:908:3: note:                 std::ios_base& std::internal(std::ios_base&)
-   internal(ios_base& __base)
-   ^
-../src/Assignment1.cpp: In member function ‘void Tree::print_Leaf_and_Internal(Node*)’:
-../src/Assignment1.cpp:172:4: error: reference to ‘internal’ is ambiguous
-    internal.push(n->data);
-    ^
-../src/Assignment1.cpp:21:13: note: candidates are: std::stack<int> internal
- stack <int> internal;
-             ^
-In file included from /usr/include/c++/4.8.3/ios:42:0,
-                 from /usr/include/c++/4.8.3/ostream:38,
-                 from /usr/include/c++/4.8.3/iostream:39,
-                 from ../src/Assignment1.cpp:17:
-/usr/include/c++/4.8.3/bits/ios_base.h:908:3: note:                 std::ios_base& std::internal(std::ios_base&)
-   internal(ios_base& __base)
-   ^
-make: *** [src/Assignment1.o] Error 1
+make: Nothing to be done for `all'.
 
-12:54:18 Build Finished (took 464ms)
+12:57:22 Build Finished (took 58ms)
 
