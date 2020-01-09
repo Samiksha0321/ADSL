@@ -1,15 +1,6 @@
-12:57:22 **** Incremental Build of configuration Debug for project Assignment2 ****
+11:42:02 **** Incremental Build of configuration Debug for project Assignment2 ****
 make all 
-Building file: ../src/Assignment2.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
-Finished building: ../src/Assignment2.cpp
- 
-Building target: Assignment2
-Invoking: GCC C++ Linker
-g++  -o "Assignment2"  ./src/Assignment2.o   
-Finished building target: Assignment2
- 
+make: Nothing to be done for `all'.
 
-12:57:23 Build Finished (took 610ms)
+11:42:02 Build Finished (took 64ms)
 

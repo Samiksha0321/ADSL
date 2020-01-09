@@ -8,7 +8,7 @@
 //
 /*	A Dictionary stores keywords & its meanings. Provide facility for
 	adding new keywords (done), deleting keywords, updating values of any
-	entry, assign a given tree into another tree (=). Provide facility to
+	entry (done), assign a given tree into another tree (=). Provide facility to
 	display whole data sorted in ascending/ Descending order (done). Also find
 	how many maximum comparisons may require for finding any
 	keyword. Use Binary Search Tree for implementation.
@@ -89,6 +89,7 @@ public:
 		}while(c=='y' || c=='Y');
 	}
 
+
 	void call_display(){
 		display(root);
 	}
@@ -113,14 +114,20 @@ public:
 
 	void update(){
 		string word;
-		cout<<"Enter the keyword: ";
+		cout<<"Enter the keword: ";
 		cin>>word;
 
-		{
-			if(word == p->)
+	}
+	void callinorderRecursive(){
+		inorderRecursive(root);
+	}
+	void inorderRecursive(Node *root){
+		if(root != NULL){
+			inorderRecursive(root->left);
+			cout<<root->data<<" ";
+			inorderRecursive(root->right);
 		}
 	}
-
 };
 
 int main() {

@@ -11,7 +11,7 @@
 	b)Erase all nodes in a binary tree    											(done)
 	c)Create a mirror image of the tree												(done)
 	d)Check two binary trees are equal or not
-	e)Inorder, Preorder, Postorder traversal of tree(recursive and non-recursive)	(done)
+	e)Inorder, Preorder, Postorder traversal of tree(recursive and non-recursive)	(recur done)
 	f)Print internal and leaf nodes													(done)
  */
 #include <iostream>
@@ -125,32 +125,17 @@ public:
 				p = p->left;
 			}
 			else if (!s.empty()){
-				cout<<"  "<<s.top()->data;
+				cout<<"  "<<s.top();
 				p = s.top()->right;
 				s.pop();
 			}
 			else
 				flag = 1;
+
 		}
 	}
 	void preorderNONRecursive(){
-		int flag=0;
-		Node* p = root;
-		stack<Node*>s;
 
-		while(flag==0){
-			if(p!=NULL){
-				s.push(p);
-				cout<<"  "<<p->data;
-				p = p->left;
-			}
-			else if (!s.empty()){
-				p = s.top()->right;
-				s.pop();
-			}
-			else
-				flag = 1;
-		}
 	}
 	void postorderNONRecursive(){
 

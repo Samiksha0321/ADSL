@@ -89,6 +89,7 @@ public:
 		}while(c=='y' || c=='Y');
 	}
 
+
 	void call_display(){
 		display(root);
 	}
@@ -113,11 +114,25 @@ public:
 
 	void update(){
 		string word;
-		cout<<"Enter the keyword: ";
+		cout<<"Enter the keword: ";
 		cin>>word;
 
-		{
-			if(word == p->)
+		int flag=0;
+		Node* p = root;
+		stack<Node*>s;
+
+		while(flag==0){
+			if(p!=NULL){
+				s.push(p);
+				p = p->left;
+			}
+			else if (!s.empty()){
+				cout<<"  "<<s.top()->keyword;
+				p = s.top()->right;
+				s.pop();
+			}
+			else
+				flag = 1;
 		}
 	}
 
