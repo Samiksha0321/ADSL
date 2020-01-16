@@ -8,13 +8,15 @@
 //
 /*	A Dictionary stores keywords & its meanings. Provide facility for
 	adding new keywords (done), deleting keywords, updating values of any
-	entry (done), assign a given tree into another tree (=). Provide facility to
+	entry, assign a given tree into another tree (=). Provide facility to
 	display whole data sorted in ascending/ Descending order (done). Also find
 	how many maximum comparisons may require for finding any
 	keyword. Use Binary Search Tree for implementation.
  */
 
 #include <bits/stdc++.h>
+#include<vector>
+#include<string>
 using namespace std;
 
 class Node{
@@ -73,7 +75,6 @@ public:
 						else
 							q = q->right;
 					}
-
 				}while(flag==0);
 			}
 

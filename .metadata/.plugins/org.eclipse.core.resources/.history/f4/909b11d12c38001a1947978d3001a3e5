@@ -8,13 +8,15 @@
 //
 /*	A Dictionary stores keywords & its meanings. Provide facility for
 	adding new keywords (done), deleting keywords, updating values of any
-	entry (done), assign a given tree into another tree (=). Provide facility to
+	entry, assign a given tree into another tree (=). Provide facility to
 	display whole data sorted in ascending/ Descending order (done). Also find
 	how many maximum comparisons may require for finding any
 	keyword. Use Binary Search Tree for implementation.
  */
 
 #include <bits/stdc++.h>
+#include<vector>
+#include<string>
 using namespace std;
 
 class Node{
@@ -48,6 +50,14 @@ public:
 
 			cout<<"Enter the keyword: ";
 			cin>>p->keyword;
+			cout<<"How many meaning(s) of "<<p->keyword<<"?";
+			cin>>p->no_of_meanings;
+			string push_meaning;
+			for(int i=1; i<=p->no_of_meanings; i++){
+				cout<<"Enter meaning "<<i<<": ";
+				cin>>push_meaning;
+				p->meaning.push_back(push_meaning);
+			}
 
 			if(root==NULL)
 				root = p;
@@ -73,19 +83,8 @@ public:
 						else
 							q = q->right;
 					}
-
 				}while(flag==0);
 			}
-
-			cout<<"How many meaning(s) of "<<p->keyword<<"?";
-			cin>>p->no_of_meanings;
-			string push_meaning;
-			for(int i=1; i<=p->no_of_meanings; i++){
-				cout<<"Enter meaning "<<i<<": ";
-				cin>>push_meaning;
-				p->meaning.push_back(push_meaning);
-			}
-
 			cout<<"Enter another keyword(y/n)?";
 			cin>>c;
 		}while(c=='y' || c=='Y');
@@ -121,32 +120,26 @@ public:
 		q = root;
 		int flag=0;
 		do{
-			if(q->keyword.compare(word) == 0){
+			if(q ==  NULL){
+				cout<<"\n No such keyword found.";
+				flag=2;
+			}
+			else if(q->keyword.compare(word) == 0){
 				cout<<"\nKeyword found.";
 				flag=1;
 			}
-			else if(q->keyword.compare(word) < 0){
-				q = q->right;
-				if(q == NULL){
-					cout<<"\n No such keyword found.";
-					flag = 2;
-				}
-			}
-			else if(q->keyword.compare(word) > 0){
+			else if(q->keyword.compare(word) < 0)
 				q = q->left;
-				if(q == NULL){
-					cout<<"\n No such keyword found.";
-					flag = 2;
-				}
-			}
+			else
+				q = q->right;
 		}while(flag==0);
 
 		if(flag==1){
-			cout<<"\nThese are the following meanings of the given keyword:"<<endl;
+			cout<<"These are the following meanings of the given keyword:"<<endl;
 			for(int i=1; i<=q->no_of_meanings; i++){
 				cout<<i<<". "<<q->meaning[i-1]<<endl;
 			}
-			cout<<"Which meaning would you like to update: ";
+			cout<<"Which meaning would dyou like to update: ";
 			int meaning_no;
 			cin>>meaning_no;
 			cout<<"\nEnter the new meaning: \t";

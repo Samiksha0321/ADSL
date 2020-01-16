@@ -8,13 +8,15 @@
 //
 /*	A Dictionary stores keywords & its meanings. Provide facility for
 	adding new keywords (done), deleting keywords, updating values of any
-	entry (done), assign a given tree into another tree (=). Provide facility to
+	entry, assign a given tree into another tree (=). Provide facility to
 	display whole data sorted in ascending/ Descending order (done). Also find
 	how many maximum comparisons may require for finding any
 	keyword. Use Binary Search Tree for implementation.
  */
 
 #include <bits/stdc++.h>
+#include<vector>
+#include<string>
 using namespace std;
 
 class Node{
@@ -48,6 +50,14 @@ public:
 
 			cout<<"Enter the keyword: ";
 			cin>>p->keyword;
+			cout<<"How many meaning(s) of "<<p->keyword<<"?";
+			cin>>p->no_of_meanings;
+			string push_meaning;
+			for(int i=1; i<=p->no_of_meanings; i++){
+				cout<<"Enter meaning "<<i<<": ";
+				cin>>push_meaning;
+				p->meaning.push_back(push_meaning);
+			}
 
 			if(root==NULL)
 				root = p;
@@ -73,19 +83,8 @@ public:
 						else
 							q = q->right;
 					}
-
 				}while(flag==0);
 			}
-
-			cout<<"How many meaning(s) of "<<p->keyword<<"?";
-			cin>>p->no_of_meanings;
-			string push_meaning;
-			for(int i=1; i<=p->no_of_meanings; i++){
-				cout<<"Enter meaning "<<i<<": ";
-				cin>>push_meaning;
-				p->meaning.push_back(push_meaning);
-			}
-
 			cout<<"Enter another keyword(y/n)?";
 			cin>>c;
 		}while(c=='y' || c=='Y');
