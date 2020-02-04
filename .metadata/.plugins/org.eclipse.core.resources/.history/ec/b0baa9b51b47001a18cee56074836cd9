@@ -9,7 +9,7 @@
 /**/
 
 //============================================================================
-//Create inorder threaded binary tree and perform inorder, preorder
+//Create inorder threaded binary tree and perform inorder, preorder 17/01/2020
 //traversal.
 //============================================================================
 /**/
@@ -73,7 +73,7 @@ public:
 					}
 				}while(flag==0);
 			}
-			cout<<"\nAdd another node? (y/n)"<<endl;
+			cout<<"\nAdd a node? (y/n)"<<endl;
 			cin>>c;
 		}while(c=='y' || c=='Y');
 	}
@@ -91,23 +91,6 @@ public:
 };
 
 int main() {
-
-	Threaded_Binary_Tree A;
-
-	int option;
-	cout<<"Select:"
-			"1. Create Tree"
-			"2. Display inorder"
-			"3. Display inorder traversal"
-			"4. Display preorder traversal";
-	cin>>option;
-	switch(option){
-	case 1: A.createTree();
-			break;
-	case 2: A.call_display();
-			break;
-	case 3: A.
-	}
 
 	return 0;
 }
