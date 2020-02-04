@@ -1,0 +1,23 @@
+//============================================================================
+// Name        : Assignment3.cpp
+// Author      : 21153
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+//
+/**/
+
+//============================================================================
+//Create inorder threaded binary tree and perform inorder, preorder 17/01/2020
+//traversal.
+//============================================================================
+/**/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+	return 0;
+}
