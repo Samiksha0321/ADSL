@@ -18,7 +18,6 @@
 using namespace std;
 
 class Node{
-public:
 	int data;
 	Node* left;
 	Node* right;
@@ -94,9 +93,7 @@ public:
 
 	}
 
-	void preorder_traversal(){
-
-	}
+	void preorder_
 };
 
 int main() {
@@ -115,11 +112,8 @@ int main() {
 			break;
 	case 2: A.call_display();
 			break;
-	case 3: A.inorder_traversal();
-			break;
-	default:cout<<
+	case 3: A.
 	}
-
 
 	return 0;
 }

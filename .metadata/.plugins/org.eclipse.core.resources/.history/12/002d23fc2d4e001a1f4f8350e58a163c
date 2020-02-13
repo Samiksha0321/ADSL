@@ -115,11 +115,9 @@ int main() {
 			break;
 	case 2: A.call_display();
 			break;
-	case 3: A.inorder_traversal();
+	case 3: A.
 			break;
-	default:cout<<
 	}
-
 
 	return 0;
 }

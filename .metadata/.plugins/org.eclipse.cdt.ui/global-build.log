@@ -9124,3 +9124,33 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/
   Queue<Node*> q;
                ^
 make: *** [src/Assignment4.o] Error 1
+12:21:23 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:21:24 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+12:21:24 **** Incremental Build of configuration Debug for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp:97:7: error: variable or field ‘preorder_’ declared void
+  void preorder_
+       ^
+../src/Assignment3.cpp:97:7: error: expected ‘;’ at end of member declaration
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:117:2: error: expected unqualified-id before ‘}’ token
+  }
+  ^
+../src/Assignment3.cpp:117:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment3.o] Error 1
+12:21:27 **** Incremental Build of configuration Debug for project Assignment4 ****
+make all 
+Building file: ../src/Assignment4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
+../src/Assignment4.cpp:23:13: error: expected unqualified-id before ‘)’ token
+ class Graph(){
+             ^
+make: *** [src/Assignment4.o] Error 1

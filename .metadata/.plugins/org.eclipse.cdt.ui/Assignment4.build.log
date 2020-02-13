@@ -1,22 +1,12 @@
-11:37:56 **** Incremental Build of configuration Debug for project Assignment4 ****
+12:21:27 **** Incremental Build of configuration Debug for project Assignment4 ****
 make all 
 Building file: ../src/Assignment4.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
-../src/Assignment4.cpp: In member function ‘void Graph::traverseBFS(std::string)’:
-../src/Assignment4.cpp:243:2: error: ‘Queue’ was not declared in this scope
-  Queue<Node*> q;
-  ^
-../src/Assignment4.cpp:243:12: error: expected primary-expression before ‘*’ token
-  Queue<Node*> q;
-            ^
-../src/Assignment4.cpp:243:13: error: expected primary-expression before ‘>’ token
-  Queue<Node*> q;
+../src/Assignment4.cpp:23:13: error: expected unqualified-id before ‘)’ token
+ class Graph(){
              ^
-../src/Assignment4.cpp:243:15: error: ‘q’ was not declared in this scope
-  Queue<Node*> q;
-               ^
 make: *** [src/Assignment4.o] Error 1
 
-11:37:56 Build Finished (took 569ms)
+12:21:27 Build Finished (took 315ms)
 
