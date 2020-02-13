@@ -1,0 +1,113 @@
+//============================================================================
+// Name        : Assignment3.cpp
+// Author      : 21153
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+//
+/**/
+
+//============================================================================
+//Create inorder threaded binary tree and perform inorder, preorder
+//traversal.
+//============================================================================
+/**/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Node{
+	int data;
+	Node* left;
+	Node* right;
+public:
+	Node(){
+		data=0;
+		left = NULL;
+		right = NULL;
+	}
+};
+
+class Threaded_Binary_Tree{
+	Node* root;
+public:
+	Threaded_Binary_Tree(){
+		root = NULL;
+	}
+
+	void createTree(){
+		char c;
+
+		do{
+			Node* p = new Node;
+			cout<<"\nEnter the value: ";
+			cin>>p->data;
+
+			if (root == NULL){
+				root = p;
+			}
+			else{
+				Node* q = new Node;
+				q = root;
+				int flag=0;
+				do{
+					if(p->data < q->data){
+						if(q->left == NULL){
+							q->left = p;
+							flag = 1;
+						}
+						else
+							q = q->left;
+					}
+					else if(p->data < q->data){
+						if(q->right == NULL){
+							q->right = p;
+							flag = 1;
+						}
+						else
+							q = q->right;
+					}
+					else{
+						cout<<"\nEnter a different value: ";
+					}
+				}while(flag==0);
+			}
+			cout<<"\nAdd another node? (y/n)"<<endl;
+			cin>>c;
+		}while(c=='y' || c=='Y');
+	}
+
+	void call_display(){
+		display(root);
+	}
+	void display(Node *n){
+		if(n != NULL){
+			display(n->left);
+			cout<<n->data<<"\t";
+			display(n->right);
+		}
+	}
+};
+
+int main() {
+
+	Threaded_Binary_Tree A;
+
+	int option;
+	cout<<"Select:"
+			"1. Create Tree"
+			"2. Display inorder"
+			"3. Display inorder traversal"
+			"4. Display preorder traversal";
+	cin>>option;
+	switch(option){
+	case 1: A.createTree();
+			break;
+	case 2: A.call_display();
+			break;
+	case 3: A.
+	}
+
+	return 0;
+}

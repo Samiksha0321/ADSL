@@ -88,6 +88,12 @@ public:
 			display(n->right);
 		}
 	}
+
+	void inorder_traversal(){
+
+	}
+
+	void preorder_
 };
 
 int main() {

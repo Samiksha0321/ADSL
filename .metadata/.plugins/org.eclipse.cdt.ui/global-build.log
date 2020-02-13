@@ -8872,3 +8872,255 @@ Finished building target: Assignment2
 12:52:52 **** Incremental Build of configuration Debug for project Assignment2 ****
 make all 
 make: Nothing to be done for `all'.
+11:37:43 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:37:44 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.d" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o   
+Finished building target: Assignment2
+ 
+11:37:45 **** Build of configuration Debug for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp:96:7: error: variable or field ‘preorder_’ declared void
+  void preorder_
+       ^
+../src/Assignment3.cpp:96:7: error: expected ‘;’ at end of member declaration
+../src/Assignment3.cpp: In member function ‘void Threaded_Binary_Tree::createTree()’:
+../src/Assignment3.cpp:21:6: error: ‘int Node::data’ is private
+  int data;
+      ^
+../src/Assignment3.cpp:45:12: error: within this context
+    cin>>p->data;
+            ^
+../src/Assignment3.cpp:21:6: error: ‘int Node::data’ is private
+  int data;
+      ^
+../src/Assignment3.cpp:55:12: error: within this context
+      if(p->data < q->data){
+            ^
+../src/Assignment3.cpp:21:6: error: ‘int Node::data’ is private
+  int data;
+      ^
+../src/Assignment3.cpp:55:22: error: within this context
+      if(p->data < q->data){
+                      ^
+../src/Assignment3.cpp:22:8: error: ‘Node* Node::left’ is private
+  Node* left;
+        ^
+../src/Assignment3.cpp:56:13: error: within this context
+       if(q->left == NULL){
+             ^
+../src/Assignment3.cpp:22:8: error: ‘Node* Node::left’ is private
+  Node* left;
+        ^
+../src/Assignment3.cpp:57:11: error: within this context
+        q->left = p;
+           ^
+../src/Assignment3.cpp:22:8: error: ‘Node* Node::left’ is private
+  Node* left;
+        ^
+../src/Assignment3.cpp:61:15: error: within this context
+        q = q->left;
+               ^
+../src/Assignment3.cpp:21:6: error: ‘int Node::data’ is private
+  int data;
+      ^
+../src/Assignment3.cpp:63:17: error: within this context
+      else if(p->data < q->data){
+                 ^
+../src/Assignment3.cpp:21:6: error: ‘int Node::data’ is private
+  int data;
+      ^
+../src/Assignment3.cpp:63:27: error: within this context
+      else if(p->data < q->data){
+                           ^
+../src/Assignment3.cpp:23:8: error: ‘Node* Node::right’ is private
+  Node* right;
+        ^
+../src/Assignment3.cpp:64:13: error: within this context
+       if(q->right == NULL){
+             ^
+../src/Assignment3.cpp:23:8: error: ‘Node* Node::right’ is private
+  Node* right;
+        ^
+../src/Assignment3.cpp:65:11: error: within this context
+        q->right = p;
+           ^
+../src/Assignment3.cpp:23:8: error: ‘Node* Node::right’ is private
+  Node* right;
+        ^
+../src/Assignment3.cpp:69:15: error: within this context
+        q = q->right;
+               ^
+../src/Assignment3.cpp: In member function ‘void Threaded_Binary_Tree::display(Node*)’:
+../src/Assignment3.cpp:22:8: error: ‘Node* Node::left’ is private
+  Node* left;
+        ^
+../src/Assignment3.cpp:86:15: error: within this context
+    display(n->left);
+               ^
+../src/Assignment3.cpp:21:6: error: ‘int Node::data’ is private
+  int data;
+      ^
+../src/Assignment3.cpp:87:13: error: within this context
+    cout<<n->data<<"\t";
+             ^
+../src/Assignment3.cpp:23:8: error: ‘Node* Node::right’ is private
+  Node* right;
+        ^
+../src/Assignment3.cpp:88:15: error: within this context
+    display(n->right);
+               ^
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:116:2: error: expected unqualified-id before ‘}’ token
+  }
+  ^
+../src/Assignment3.cpp:116:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment3.o] Error 1
+11:37:47 **** Build of configuration Debug for project Assignment4 ****
+make all 
+Building file: ../src/Assignment4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
+../src/Assignment4.cpp:21:91: fatal error: Queue.cpp: No such file or directory
+ #include "Queue.cpp" //paste Queue.cpp from repository into the Directory of this src file
+                                                                                           ^
+compilation terminated.
+make: *** [src/Assignment4.o] Error 1
+11:37:55 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:37:55 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+11:37:55 **** Incremental Build of configuration Debug for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp:96:7: error: variable or field ‘preorder_’ declared void
+  void preorder_
+       ^
+../src/Assignment3.cpp:96:7: error: expected ‘;’ at end of member declaration
+../src/Assignment3.cpp: In member function ‘void Threaded_Binary_Tree::createTree()’:
+../src/Assignment3.cpp:21:6: error: ‘int Node::data’ is private
+  int data;
+      ^
+../src/Assignment3.cpp:45:12: error: within this context
+    cin>>p->data;
+            ^
+../src/Assignment3.cpp:21:6: error: ‘int Node::data’ is private
+  int data;
+      ^
+../src/Assignment3.cpp:55:12: error: within this context
+      if(p->data < q->data){
+            ^
+../src/Assignment3.cpp:21:6: error: ‘int Node::data’ is private
+  int data;
+      ^
+../src/Assignment3.cpp:55:22: error: within this context
+      if(p->data < q->data){
+                      ^
+../src/Assignment3.cpp:22:8: error: ‘Node* Node::left’ is private
+  Node* left;
+        ^
+../src/Assignment3.cpp:56:13: error: within this context
+       if(q->left == NULL){
+             ^
+../src/Assignment3.cpp:22:8: error: ‘Node* Node::left’ is private
+  Node* left;
+        ^
+../src/Assignment3.cpp:57:11: error: within this context
+        q->left = p;
+           ^
+../src/Assignment3.cpp:22:8: error: ‘Node* Node::left’ is private
+  Node* left;
+        ^
+../src/Assignment3.cpp:61:15: error: within this context
+        q = q->left;
+               ^
+../src/Assignment3.cpp:21:6: error: ‘int Node::data’ is private
+  int data;
+      ^
+../src/Assignment3.cpp:63:17: error: within this context
+      else if(p->data < q->data){
+                 ^
+../src/Assignment3.cpp:21:6: error: ‘int Node::data’ is private
+  int data;
+      ^
+../src/Assignment3.cpp:63:27: error: within this context
+      else if(p->data < q->data){
+                           ^
+../src/Assignment3.cpp:23:8: error: ‘Node* Node::right’ is private
+  Node* right;
+        ^
+../src/Assignment3.cpp:64:13: error: within this context
+       if(q->right == NULL){
+             ^
+../src/Assignment3.cpp:23:8: error: ‘Node* Node::right’ is private
+  Node* right;
+        ^
+../src/Assignment3.cpp:65:11: error: within this context
+        q->right = p;
+           ^
+../src/Assignment3.cpp:23:8: error: ‘Node* Node::right’ is private
+  Node* right;
+        ^
+../src/Assignment3.cpp:69:15: error: within this context
+        q = q->right;
+               ^
+../src/Assignment3.cpp: In member function ‘void Threaded_Binary_Tree::display(Node*)’:
+../src/Assignment3.cpp:22:8: error: ‘Node* Node::left’ is private
+  Node* left;
+        ^
+../src/Assignment3.cpp:86:15: error: within this context
+    display(n->left);
+               ^
+../src/Assignment3.cpp:21:6: error: ‘int Node::data’ is private
+  int data;
+      ^
+../src/Assignment3.cpp:87:13: error: within this context
+    cout<<n->data<<"\t";
+             ^
+../src/Assignment3.cpp:23:8: error: ‘Node* Node::right’ is private
+  Node* right;
+        ^
+../src/Assignment3.cpp:88:15: error: within this context
+    display(n->right);
+               ^
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:116:2: error: expected unqualified-id before ‘}’ token
+  }
+  ^
+../src/Assignment3.cpp:116:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment3.o] Error 1
+11:37:56 **** Incremental Build of configuration Debug for project Assignment4 ****
+make all 
+Building file: ../src/Assignment4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
+../src/Assignment4.cpp: In member function ‘void Graph::traverseBFS(std::string)’:
+../src/Assignment4.cpp:243:2: error: ‘Queue’ was not declared in this scope
+  Queue<Node*> q;
+  ^
+../src/Assignment4.cpp:243:12: error: expected primary-expression before ‘*’ token
+  Queue<Node*> q;
+            ^
+../src/Assignment4.cpp:243:13: error: expected primary-expression before ‘>’ token
+  Queue<Node*> q;
+             ^
+../src/Assignment4.cpp:243:15: error: ‘q’ was not declared in this scope
+  Queue<Node*> q;
+               ^
+make: *** [src/Assignment4.o] Error 1
