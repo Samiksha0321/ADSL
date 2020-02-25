@@ -1,0 +1,133 @@
+//============================================================================
+// Name        : assignment5.cpp
+// Author      : 21153
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Graph{
+	int **matrix;
+	int n;
+public:
+	Graph(int n){
+		this->n=n;
+		matrix=new int *[n];
+		for(int i=0;i<n;i++)
+			matrix[i]=new int[n];
+	}
+
+	void printMatrix();
+	void addEdge(int,int,int);
+	void prims(int);
+	void print(int*,int);
+	int minKey(int*,bool*);
+};
+
+
+
+void Graph::addEdge(int u,int v,int weight){
+	matrix[u][v]=weight;
+	matrix[v][u]=weight;
+}
+
+void Graph::printMatrix(){
+	for(int i=0;i<n;i++){
+		for(int j=0;j<n;j++){
+			cout<<matrix[i][j]<<" ";
+		}
+		cout<<"\n";
+	}
+}
+
+void Graph::prims(int start=0){
+	int *edge=new int[n];
+	int *key=new int[n];
+	bool *mstSet=new bool[n];
+
+	for(int i=0; i<n; i++){
+		edge[i] = -1;
+		key[i] = INT_MAX;
+		mstSet[i] = false;
+	}
+	key[start] = 0;
+	edge[start] = -1;
+
+	for(int i=0; i<n; i++){
+		int current=minKey(key,mstSet);
+		mstSet[current]=true;
+		for(int j=0;j<n;j++){
+			if(matrix[current][j]&&mstSet[j]==false&&matrix[current][j]<key[j]){
+				edge[j]=current;
+				key[j]=matrix[current][j];
+			}
+		}
+	}
+	this->print(edge,start);
+}
+
+int Graph::minKey(int *key,bool *mstSet){
+	int min=INT_MAX;
+	int index;
+	for(int i=0;i<n;i++){
+		if(mstSet[i]==false&&key[i]<min){
+			min=key[i];
+			index=i;
+		}
+	}
+	return index;
+}
+
+void Graph::print(int *edge,int start){
+	int sum=0;
+	cout<<"\nEdges \t Weight\n";
+	for(int i=0;i<n;i++){
+		if(i==start)	continue;
+		cout<<edge[i]<<" - "<<i<<"\t "<<matrix[i][edge[i]]<<"\n";
+		sum=sum+matrix[i][edge[i]];
+	}
+	cout<<"Optimal Connection Cost: "<<sum<<"\n";
+}
+
+
+int main(){
+	int n,u,v;
+	int choice;
+	char continu;
+	int cost;
+	Graph *network;
+	cout<<"\nEnter Total No. of Offices: ";
+	cin>>n;
+	network=new Graph(n);
+	do{
+		cout<<"\nSelect:\n"
+				"1. Add or Update Connection Charges (Add Edge)\n"
+				"2. Display Adjacency Matrix\n"
+				"3. Find Optimal Connection and cost\n"
+				"4. Exit";
+		cin>>choice;
+		switch(choice){
+			case 1:	cout<<"\nEnter 1st Office: ";cin>>u;
+					cout<<"\nEnter 2nd Office: ";cin>>v;
+					cout<<"\nEnter Connection Cost: ";cin>>cost;
+					network->addEdge(u,v,cost);
+					cout<<"\nConnected Labels: "<<u<<" - "<<v<<"\n";
+					break;
+			case 2: cout<<"\nAdjacency Matrix: \n";
+					network->printMatrix();
+					break;
+			case 3: cout<<"Enter Starting Office Label: ";cin>>u;
+					cout<<"\nOptimal Connection: \n";
+					network->prims(u);
+					break;
+			default:cout<<"\nInvalid Choice";
+					break;
+		}
+		cout<<"Continue? [Y/N] \t";
+		cin>>continu;
+	}while(continu=='Y' || continu=='y');
+	return 0;
+}
