@@ -15,7 +15,6 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-#define MAX 20
 
 class Dictionary{
 	string word;
@@ -25,19 +24,10 @@ private:
 		word = '\0';
 		meaning = '\0';
 	}
-	void print();
-	friend class Hash;
 };
 
-void Dictionary::print(){
-	cout<<"Enter word:\t";
-	cin>>word;
-	cout<<"\nEnter meaning:\t";
-	cin>>meaning;
-}
-
 class Hash{
-	Dictionary dict[MAX];
+	Dictionary dict[20];
 	void hashFunction();
 	void printHashTable();
 

@@ -8,11 +8,10 @@
 //
 /**/
 
-//============================================================================
-//Create inorder threaded binary tree and perform inorder, preorder
-//traversal.
-//============================================================================
-/**/
+/*
+ * Create inorder threaded binary tree and perform inorder, preorder
+ * traversal.
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
