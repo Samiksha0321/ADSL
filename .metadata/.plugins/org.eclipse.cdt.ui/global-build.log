@@ -9880,3 +9880,701 @@ Finished building target: assignment5
 12:09:42 **** Incremental Build of configuration Debug for project assignment5 ****
 make all 
 make: Nothing to be done for `all'.
+11:19:41 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:19:42 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+11:19:43 **** Incremental Build of configuration Debug for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:120:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/Assignment3.cpp:120:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment3.o] Error 1
+11:19:46 **** Incremental Build of configuration Debug for project Assignment4 ****
+make all 
+Building file: ../src/Assignment4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
+../src/Assignment4.cpp:23:13: error: expected unqualified-id before ‘)’ token
+ class Graph(){
+             ^
+make: *** [src/Assignment4.o] Error 1
+11:19:47 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.d" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o   
+Finished building target: Assignment6
+ 
+11:19:49 **** Build of configuration Debug for project Assignment7 ****
+make all 
+Building file: ../src/Assignment7.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment7.d" -MT"src/Assignment7.d" -o "src/Assignment7.o" "../src/Assignment7.cpp"
+Finished building: ../src/Assignment7.cpp
+ 
+Building target: Assignment7
+Invoking: GCC C++ Linker
+g++  -o "Assignment7"  ./src/Assignment7.o   
+Finished building target: Assignment7
+ 
+11:21:13 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:21:13 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+11:21:14 **** Incremental Build of configuration Debug for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:120:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/Assignment3.cpp:120:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment3.o] Error 1
+11:21:15 **** Incremental Build of configuration Debug for project Assignment4 ****
+make all 
+Building file: ../src/Assignment4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
+../src/Assignment4.cpp:23:13: error: expected unqualified-id before ‘)’ token
+ class Graph(){
+             ^
+make: *** [src/Assignment4.o] Error 1
+11:21:16 **** Build of configuration Debug for project Assignment5 ****
+make all 
+Building file: ../src/Assignment5.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment5.d" -MT"src/Assignment5.d" -o "src/Assignment5.o" "../src/Assignment5.cpp"
+Finished building: ../src/Assignment5.cpp
+ 
+Building target: Assignment5
+Invoking: GCC C++ Linker
+g++  -o "Assignment5"  ./src/Assignment5.o   
+Finished building target: Assignment5
+ 
+11:21:18 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+make: Nothing to be done for `all'.
+11:21:18 **** Incremental Build of configuration Debug for project Assignment7 ****
+make all 
+make: Nothing to be done for `all'.
+11:21:49 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:21:49 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+11:21:49 **** Incremental Build of configuration Debug for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:120:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/Assignment3.cpp:120:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment3.o] Error 1
+11:21:50 **** Incremental Build of configuration Debug for project Assignment4 ****
+make all 
+Building file: ../src/Assignment4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
+../src/Assignment4.cpp:23:13: error: expected unqualified-id before ‘)’ token
+ class Graph(){
+             ^
+make: *** [src/Assignment4.o] Error 1
+11:21:51 **** Incremental Build of configuration Debug for project Assignment5 ****
+make all 
+Building file: ../src/Assignment5.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment5.d" -MT"src/Assignment5.d" -o "src/Assignment5.o" "../src/Assignment5.cpp"
+Finished building: ../src/Assignment5.cpp
+ 
+Building target: Assignment5
+Invoking: GCC C++ Linker
+g++  -o "Assignment5"  ./src/Assignment5.o   
+Finished building target: Assignment5
+ 
+11:21:52 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+make: Nothing to be done for `all'.
+11:21:53 **** Incremental Build of configuration Debug for project Assignment7 ****
+make all 
+make: Nothing to be done for `all'.
+11:21:53 **** Incremental Build of configuration Debug for project assignment5 ****
+make all 
+make: *** No rule to make target `src/assignment5.o', needed by `assignment5'.  Stop.
+11:21:56 **** Incremental Build of configuration Debug for project Assignment5 ****
+make all 
+make: Nothing to be done for `all'.
+11:22:50 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:22:50 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+11:22:50 **** Incremental Build of configuration Debug for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:120:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/Assignment3.cpp:120:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment3.o] Error 1
+11:22:51 **** Incremental Build of configuration Debug for project Assignment4 ****
+make all 
+Building file: ../src/Assignment4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
+../src/Assignment4.cpp:23:13: error: expected unqualified-id before ‘)’ token
+ class Graph(){
+             ^
+make: *** [src/Assignment4.o] Error 1
+11:22:52 **** Incremental Build of configuration Debug for project Assignment5 ****
+make all 
+Building file: ../src/Assignment5.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment5.d" -MT"src/Assignment5.d" -o "src/Assignment5.o" "../src/Assignment5.cpp"
+Finished building: ../src/Assignment5.cpp
+ 
+Building target: Assignment5
+Invoking: GCC C++ Linker
+g++  -o "Assignment5"  ./src/Assignment5.o   
+Finished building target: Assignment5
+ 
+11:22:53 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+make: Nothing to be done for `all'.
+11:22:53 **** Incremental Build of configuration Debug for project Assignment7 ****
+make all 
+make: Nothing to be done for `all'.
+11:22:54 **** Incremental Build of configuration Debug for project Assignment5 ****
+make all 
+make: Nothing to be done for `all'.
+11:29:33 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:29:33 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+11:29:34 **** Incremental Build of configuration Debug for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:120:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/Assignment3.cpp:120:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment3.o] Error 1
+11:29:37 **** Incremental Build of configuration Debug for project Assignment4 ****
+make all 
+Building file: ../src/Assignment4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
+../src/Assignment4.cpp:23:13: error: expected unqualified-id before ‘)’ token
+ class Graph(){
+             ^
+make: *** [src/Assignment4.o] Error 1
+11:29:38 **** Incremental Build of configuration Debug for project Assignment5 ****
+make all 
+make: Nothing to be done for `all'.
+11:29:38 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.d" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+../src/Assignment6.cpp: In member function ‘void HashFunction::insert()’:
+../src/Assignment6.cpp:144:6: warning: unused variable ‘v’ [-Wunused-variable]
+  int v,hi,cnt=0,flag=0,i;
+      ^
+../src/Assignment6.cpp: In member function ‘int HashFunction::find(long int)’:
+../src/Assignment6.cpp:127:3: warning: control reaches end of non-void function [-Wreturn-type]
+   }
+   ^
+Finished building: ../src/Assignment6.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o   
+Finished building target: Assignment6
+ 
+11:29:39 **** Incremental Build of configuration Debug for project Assignment7 ****
+make all 
+make: Nothing to be done for `all'.
+11:29:41 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+make: Nothing to be done for `all'.
+11:30:24 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+make: Nothing to be done for `all'.
+11:31:04 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+make: Nothing to be done for `all'.
+11:51:48 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:51:48 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+11:51:49 **** Incremental Build of configuration Debug for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:120:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/Assignment3.cpp:120:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment3.o] Error 1
+11:51:50 **** Incremental Build of configuration Debug for project Assignment4 ****
+make all 
+Building file: ../src/Assignment4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
+../src/Assignment4.cpp:23:13: error: expected unqualified-id before ‘)’ token
+ class Graph(){
+             ^
+make: *** [src/Assignment4.o] Error 1
+11:51:51 **** Incremental Build of configuration Debug for project Assignment5 ****
+make all 
+make: Nothing to be done for `all'.
+11:51:51 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.d" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+../src/Assignment6.cpp: In member function ‘void HashFunction::insert()’:
+../src/Assignment6.cpp:181:6: warning: unused variable ‘v’ [-Wunused-variable]
+  int v,hi,cnt=0,flag=0,i;
+      ^
+../src/Assignment6.cpp: In member function ‘int HashFunction::find(long int)’:
+../src/Assignment6.cpp:164:3: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/Assignment6.cpp
+   }
+   ^
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o   
+Finished building target: Assignment6
+ 
+11:51:52 **** Incremental Build of configuration Debug for project Assignment7 ****
+make all 
+make: Nothing to be done for `all'.
+11:51:54 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+make: Nothing to be done for `all'.
+11:57:32 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:57:32 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+11:57:32 **** Incremental Build of configuration Debug for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:120:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/Assignment3.cpp:120:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment3.o] Error 1
+11:57:35 **** Incremental Build of configuration Debug for project Assignment4 ****
+make all 
+Building file: ../src/Assignment4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
+../src/Assignment4.cpp:23:13: error: expected unqualified-id before ‘)’ token
+ class Graph(){
+             ^
+make: *** [src/Assignment4.o] Error 1
+11:57:36 **** Incremental Build of configuration Debug for project Assignment5 ****
+make all 
+make: Nothing to be done for `all'.
+11:57:37 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.d" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+../src/Assignment6.cpp: In member function ‘void Hash::insertKey()’:
+../src/Assignment6.cpp:48:12: error: request for member ‘word’ in ‘((Hash*)this)->Hash::dict’, which is of non-class type ‘Dictionary [20]’
+  cin>>dict.word;
+            ^
+../src/Assignment6.cpp:50:12: error: request for member ‘meaning’ in ‘((Hash*)this)->Hash::dict’, which is of non-class type ‘Dictionary [20]’
+  cin>>dict.meaning;
+            ^
+../src/Assignment6.cpp: In function ‘int main()’:
+../src/Assignment6.cpp:74:5: error: expected ‘;’ before ‘A’
+     A.insertKey();
+     ^
+../src/Assignment6.cpp:53:6: error: ‘void Hash::printHashTable()’ is private
+ void Hash::printHashTable(){
+      ^
+../src/Assignment6.cpp:76:28: error: within this context
+   case 2: A.printHashTable();
+                            ^
+../src/Assignment6.cpp:41:7: error: ‘void Hash::findKey()’ is private
+  void findKey();
+       ^
+../src/Assignment6.cpp:78:21: error: within this context
+   case 3: A.findKey();
+                     ^
+../src/Assignment6.cpp:42:7: error: ‘void Hash::deleteKey()’ is private
+  void deleteKey();
+       ^
+../src/Assignment6.cpp:80:23: error: within this context
+   case 4: A.deleteKey();
+                       ^
+make: *** [src/Assignment6.o] Error 1
+11:57:38 **** Incremental Build of configuration Debug for project Assignment7 ****
+make all 
+make: Nothing to be done for `all'.
+11:58:31 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:58:31 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+11:58:32 **** Incremental Build of configuration Debug for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:120:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/Assignment3.cpp:120:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment3.o] Error 1
+11:58:34 **** Incremental Build of configuration Debug for project Assignment4 ****
+make all 
+Building file: ../src/Assignment4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
+../src/Assignment4.cpp:23:13: error: expected unqualified-id before ‘)’ token
+ class Graph(){
+             ^
+make: *** [src/Assignment4.o] Error 1
+11:58:35 **** Incremental Build of configuration Debug for project Assignment5 ****
+make all 
+make: Nothing to be done for `all'.
+11:58:35 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.d" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+../src/Assignment6.cpp: In function ‘int main()’:
+../src/Assignment6.cpp:74:5: error: expected ‘;’ before ‘A’
+     A.insertKey();
+     ^
+../src/Assignment6.cpp:53:6: error: ‘void Hash::printHashTable()’ is private
+ void Hash::printHashTable(){
+      ^
+../src/Assignment6.cpp:76:28: error: within this context
+   case 2: A.printHashTable();
+                            ^
+../src/Assignment6.cpp:41:7: error: ‘void Hash::findKey()’ is private
+  void findKey();
+       ^
+../src/Assignment6.cpp:78:21: error: within this context
+   case 3: A.findKey();
+                     ^
+../src/Assignment6.cpp:42:7: error: ‘void Hash::deleteKey()’ is private
+  void deleteKey();
+       ^
+../src/Assignment6.cpp:80:23: error: within this context
+   case 4: A.deleteKey();
+                       ^
+make: *** [src/Assignment6.o] Error 1
+11:58:37 **** Incremental Build of configuration Debug for project Assignment7 ****
+make all 
+make: Nothing to be done for `all'.
+11:59:47 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+11:59:48 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+11:59:48 **** Incremental Build of configuration Debug for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:120:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/Assignment3.cpp:120:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment3.o] Error 1
+11:59:49 **** Incremental Build of configuration Debug for project Assignment4 ****
+make all 
+Building file: ../src/Assignment4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
+../src/Assignment4.cpp:23:13: error: expected unqualified-id before ‘)’ token
+ class Graph(){
+             ^
+make: *** [src/Assignment4.o] Error 1
+11:59:50 **** Incremental Build of configuration Debug for project Assignment5 ****
+make all 
+make: Nothing to be done for `all'.
+11:59:50 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.d" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+../src/Assignment6.cpp: In function ‘int main()’:
+../src/Assignment6.cpp:75:5: error: expected ‘;’ before ‘A’
+     A.insertKey();
+     ^
+make: *** [src/Assignment6.o] Error 1
+11:59:51 **** Incremental Build of configuration Debug for project Assignment7 ****
+make all 
+make: Nothing to be done for `all'.
+12:00:05 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:00:05 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+12:00:05 **** Incremental Build of configuration Debug for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:120:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/Assignment3.cpp:120:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment3.o] Error 1
+12:00:06 **** Incremental Build of configuration Debug for project Assignment4 ****
+make all 
+Building file: ../src/Assignment4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
+../src/Assignment4.cpp:23:13: error: expected unqualified-id before ‘)’ token
+ class Graph(){
+             ^
+make: *** [src/Assignment4.o] Error 1
+12:00:06 **** Incremental Build of configuration Debug for project Assignment5 ****
+make all 
+make: Nothing to be done for `all'.
+12:00:06 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.d" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o   
+./src/Assignment6.o: In function `main':
+/home/SE/21153/Assignment6/Debug/../src/Assignment6.cpp:79: undefined reference to `Hash::findKey()'
+/home/SE/21153/Assignment6/Debug/../src/Assignment6.cpp:81: undefined reference to `Hash::deleteKey()'
+collect2: error: ld returned 1 exit status
+make: *** [Assignment6] Error 1
+12:00:08 **** Incremental Build of configuration Debug for project Assignment7 ****
+make all 
+make: Nothing to be done for `all'.
+12:02:15 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:02:16 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+12:02:17 **** Incremental Build of configuration Debug for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:120:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/Assignment3.cpp:120:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment3.o] Error 1
+12:02:20 **** Incremental Build of configuration Debug for project Assignment4 ****
+make all 
+Building file: ../src/Assignment4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
+../src/Assignment4.cpp:23:13: error: expected unqualified-id before ‘)’ token
+ class Graph(){
+             ^
+make: *** [src/Assignment4.o] Error 1
+12:02:20 **** Incremental Build of configuration Debug for project Assignment5 ****
+make all 
+make: Nothing to be done for `all'.
+12:02:21 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.d" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o   
+Finished building target: Assignment6
+ 
+12:02:22 **** Incremental Build of configuration Debug for project Assignment7 ****
+make all 
+make: Nothing to be done for `all'.
+12:03:55 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:03:55 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+12:03:56 **** Incremental Build of configuration Debug for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:120:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/Assignment3.cpp:120:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment3.o] Error 1
+12:03:57 **** Incremental Build of configuration Debug for project Assignment4 ****
+make all 
+Building file: ../src/Assignment4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
+../src/Assignment4.cpp:23:13: error: expected unqualified-id before ‘)’ token
+ class Graph(){
+             ^
+make: *** [src/Assignment4.o] Error 1
+12:03:57 **** Incremental Build of configuration Debug for project Assignment5 ****
+make all 
+make: Nothing to be done for `all'.
+12:03:57 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.d" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+../src/Assignment6.cpp: In function ‘int main()’:
+../src/Assignment6.cpp:88:41: error: ‘class Hash’ has no member named ‘word’
+   case 1: cout<<"Enter key: \t"; cin>>A.word;
+                                         ^
+make: *** [src/Assignment6.o] Error 1
+12:03:58 **** Incremental Build of configuration Debug for project Assignment7 ****
+make all 
+make: Nothing to be done for `all'.
+12:04:48 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:04:48 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+12:04:48 **** Incremental Build of configuration Debug for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:120:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/Assignment3.cpp:120:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment3.o] Error 1
+12:04:49 **** Incremental Build of configuration Debug for project Assignment4 ****
+make all 
+Building file: ../src/Assignment4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
+../src/Assignment4.cpp:23:13: error: expected unqualified-id before ‘)’ token
+ class Graph(){
+             ^
+make: *** [src/Assignment4.o] Error 1
+12:04:50 **** Incremental Build of configuration Debug for project Assignment5 ****
+make all 
+make: Nothing to be done for `all'.
+12:04:50 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.d" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+../src/Assignment6.cpp: In function ‘int main()’:
+../src/Assignment6.cpp:22:9: error: ‘std::string Dictionary::word’ is private
+  string word;
+         ^
+../src/Assignment6.cpp:87:41: error: within this context
+   case 1: cout<<"Enter key: \t"; cin>>D.word;
+                                         ^
+make: *** [src/Assignment6.o] Error 1
+12:04:51 **** Incremental Build of configuration Debug for project Assignment7 ****
+make all 
+make: Nothing to be done for `all'.
+12:06:16 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for `all'.
+12:06:16 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for `all'.
+12:06:16 **** Incremental Build of configuration Debug for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:120:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/Assignment3.cpp:120:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/Assignment3.o] Error 1
+12:06:17 **** Incremental Build of configuration Debug for project Assignment4 ****
+make all 
+Building file: ../src/Assignment4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.d" -o "src/Assignment4.o" "../src/Assignment4.cpp"
+../src/Assignment4.cpp:23:13: error: expected unqualified-id before ‘)’ token
+ class Graph(){
+             ^
+make: *** [src/Assignment4.o] Error 1
+12:06:17 **** Incremental Build of configuration Debug for project Assignment5 ****
+make all 
+make: Nothing to be done for `all'.
+12:06:18 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.d" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o   
+Finished building target: Assignment6
+ 
+12:06:19 **** Incremental Build of configuration Debug for project Assignment7 ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,4 +1,4 @@
-12:09:38 **** Incremental Build of configuration Debug for project Assignment4 ****
+12:06:17 **** Incremental Build of configuration Debug for project Assignment4 ****
 make all 
 Building file: ../src/Assignment4.cpp
 Invoking: GCC C++ Compiler
@@ -8,5 +8,5 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/
              ^
 make: *** [src/Assignment4.o] Error 1
 
-12:09:38 Build Finished (took 319ms)
+12:06:17 Build Finished (took 321ms)
 

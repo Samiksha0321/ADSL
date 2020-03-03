@@ -1,14 +1,14 @@
-12:09:36 **** Incremental Build of configuration Debug for project Assignment3 ****
+12:06:16 **** Incremental Build of configuration Debug for project Assignment3 ****
 make all 
 Building file: ../src/Assignment3.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.d" -o "src/Assignment3.o" "../src/Assignment3.cpp"
 ../src/Assignment3.cpp: In function ‘int main()’:
-../src/Assignment3.cpp:121:2: error: expected primary-expression before ‘}’ token
+../src/Assignment3.cpp:120:2: error: expected primary-expression before ‘}’ token
   }
   ^
-../src/Assignment3.cpp:121:2: error: expected ‘;’ before ‘}’ token
+../src/Assignment3.cpp:120:2: error: expected ‘;’ before ‘}’ token
 make: *** [src/Assignment3.o] Error 1
 
-12:09:38 Build Finished (took 1s.765ms)
+12:06:17 Build Finished (took 781ms)
 
